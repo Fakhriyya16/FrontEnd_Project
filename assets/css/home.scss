@@ -1,0 +1,149 @@
+header {
+    background-color: #edeef3;
+    ;
+
+    nav {
+        height: 100px;
+
+        .container {
+            .dropdown-items {
+                margin-left: 200px;
+                gap: 10px;
+
+                li {
+                    cursor: pointer;
+                    display: flex;
+                    transition: all 0.5s;
+
+                    i {
+                        margin-top: 17px;
+                        font-size: 12px;
+                        margin-left: -4px;
+                    }
+                }
+
+                .dropdown-toggle::after {
+                    display: none;
+                }
+            }
+            .dropdown:hover .dropdown-menu {
+                display: block;
+                margin-top: 48px;
+            }
+            .dropdown-menu{
+                border-radius: 0px;
+                border: 1px solid rgba(236, 236, 236, 0.673);
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                li{
+                    height: 40px;
+                    align-self: center;
+                    border-bottom: 1px solid rgba(182, 182, 182, 0.673);
+                }
+                .last{
+                    border-bottom: 0px;
+                }
+            }
+
+            .contact-li {
+                margin-left: 20px;
+            }
+
+            .logo {
+                cursor: pointer;
+            }
+
+            a {
+                font-size: 16px;
+                font-weight: 500;
+                color: #0e1133;
+            }
+
+            .category-border {
+                border-left: 1px solid rgba(209, 209, 209, 0.712);
+
+                img {
+                    margin-left: 20px;
+                    cursor: pointer;
+                }
+
+                a {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #0e1133;
+                }
+            }
+
+            .search-input {
+                display: flex;
+                gap: 15px;
+                justify-content: center;
+
+                input {
+                    transition: all 0.5s;
+                    width: 280px;
+                    line-height: 20px;
+                    border-radius: 4px;
+                    background: #ffffff;
+                    outline: none;
+                    border: 1px solid #ffffff;
+                    font-size: 16px;
+                    padding: 15px 65px 15px 55px;
+                    position: relative;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                }
+
+                input::placeholder {
+                    font-size: 0.9rem;
+                    text-align: left;
+                }
+
+                .fa-magnifying-glass {
+                    position: absolute;
+                    font-weight: 900;
+                    margin-left: -380px;
+                    margin-top: 19px;
+                    cursor: pointer;
+                }
+
+                .shop-icon {
+                    position: absolute;
+                    margin-top: 16px;
+                    margin-right: -70px;
+                    border-left: 2px solid rgba(209, 209, 209, 0.712);
+
+                    .fa-cart-shopping {
+                        font-size: 17px;
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+
+                    span {
+                        background-color: #2b4eff;
+                        color: white;
+                        border-radius: 50%;
+                        padding: 0px 5px;
+                        font-size: 12px;
+                        position: absolute;
+                        margin-left: -10px;
+                        margin-top: -10px;
+                    }
+                }
+
+                button {
+                    height: 51.6px;
+                    text-align: center;
+                    color: #fff;
+                    padding: 0px 25px;
+                    background: #2b4eff;
+                    border-radius: 4px;
+                    font-weight: 500;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,130 @@
+header {
+  background-color: #edeef3;
+}
+header nav {
+  height: 100px;
+}
+header nav .container .dropdown-items {
+  margin-left: 200px;
+  gap: 10px;
+}
+header nav .container .dropdown-items li {
+  cursor: pointer;
+  display: flex;
+  transition: all 0.5s;
+}
+header nav .container .dropdown-items li i {
+  margin-top: 17px;
+  font-size: 12px;
+  margin-left: -4px;
+}
+header nav .container .dropdown-items .dropdown-toggle::after {
+  display: none;
+}
+header nav .container .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 48px;
+}
+header nav .container .dropdown-menu {
+  border-radius: 0px;
+  border: 1px solid rgba(236, 236, 236, 0.673);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+header nav .container .dropdown-menu li {
+  height: 40px;
+  align-self: center;
+  border-bottom: 1px solid rgba(182, 182, 182, 0.673);
+}
+header nav .container .dropdown-menu .last {
+  border-bottom: 0px;
+}
+header nav .container .contact-li {
+  margin-left: 20px;
+}
+header nav .container .logo {
+  cursor: pointer;
+}
+header nav .container a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0e1133;
+}
+header nav .container .category-border {
+  border-left: 1px solid rgba(209, 209, 209, 0.712);
+}
+header nav .container .category-border img {
+  margin-left: 20px;
+  cursor: pointer;
+}
+header nav .container .category-border a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0e1133;
+}
+header nav .container .search-input {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+header nav .container .search-input input {
+  transition: all 0.5s;
+  width: 280px;
+  line-height: 20px;
+  border-radius: 4px;
+  background: #ffffff;
+  outline: none;
+  border: 1px solid #ffffff;
+  font-size: 16px;
+  padding: 15px 65px 15px 55px;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+header nav .container .search-input input::-moz-placeholder {
+  font-size: 0.9rem;
+  text-align: left;
+}
+header nav .container .search-input input::placeholder {
+  font-size: 0.9rem;
+  text-align: left;
+}
+header nav .container .search-input .fa-magnifying-glass {
+  position: absolute;
+  font-weight: 900;
+  margin-left: -380px;
+  margin-top: 19px;
+  cursor: pointer;
+}
+header nav .container .search-input .shop-icon {
+  position: absolute;
+  margin-top: 16px;
+  margin-right: -70px;
+  border-left: 2px solid rgba(209, 209, 209, 0.712);
+}
+header nav .container .search-input .shop-icon .fa-cart-shopping {
+  font-size: 17px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+header nav .container .search-input .shop-icon span {
+  background-color: #2b4eff;
+  color: white;
+  border-radius: 50%;
+  padding: 0px 5px;
+  font-size: 12px;
+  position: absolute;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+header nav .container .search-input button {
+  height: 51.6px;
+  text-align: center;
+  color: #fff;
+  padding: 0px 25px;
+  background: #2b4eff;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+header nav .container .search-input button:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}/*# sourceMappingURL=home.css.map */

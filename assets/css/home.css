@@ -106,25 +106,23 @@ header nav .container .category-border {
   border-left: 1px solid rgba(209, 209, 209, 0.712);
   transition: all 0.5s;
 }
-header nav .container .category-border .nav-item div:first-child:hover i {
-  color: #2b4eff;
+header nav .container .category-border .dots {
+  margin-top: 0px;
+  margin-left: 20px;
 }
-header nav .container .category-border .nav-item div:first-child:hover a {
+header nav .container .category-border .dots:hover a,
+header nav .container .category-border .dots:hover i {
   color: #2b4eff;
+  transition: all 0.5s;
 }
-header nav .container .category-border a {
+header nav .container .category-border .dots a {
   font-size: 16px;
   font-weight: 500;
   color: #0e1133;
-  transition: all 0.5s;
-}
-header nav .container .category-border .dots {
-  margin-top: 12px;
-  margin-left: 20px;
 }
 header nav .container .category-border .dots i {
   padding: 0.5px;
-  transition: all 0.5s;
+  margin-top: 12px;
 }
 header nav .container .search-input {
   display: flex;
@@ -200,6 +198,10 @@ header nav .container .search-input button {
 header nav .container .search-input button:hover {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
+header .fixed-top {
+  background: #ffffff !important;
+  transition: all 0.5s;
+}
 
 main #intro .intro-background {
   background-color: #edeef3;
@@ -231,7 +233,7 @@ main #intro .intro-background img:nth-child(5) {
   animation: rotation 3s infinite linear;
 }
 main #intro .intro-background img:nth-child(6) {
-  left: 97%;
+  left: 96%;
   top: 411px;
 }
 main #intro .intro-background .row .col-6 {
@@ -312,6 +314,161 @@ main #intro .intro-background .row .col-2 .jumping-text h4 {
   margin-bottom: 0;
   line-height: 1;
 }
+main #explore .container .explore-headings {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+main #explore .container .explore-headings .explore-headings-left h2 {
+  color: #0e1133;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 40px;
+  margin-bottom: 3px;
+  position: relative;
+  z-index: 1;
+}
+main #explore .container .explore-headings .explore-headings-left img {
+  position: absolute;
+  left: 12%;
+  top: 147.5%;
+  z-index: 0;
+  animation: section-animation 3s infinite;
+}
+main #explore .container .explore-headings .explore-headings-right {
+  position: relative;
+  margin-top: 70px;
+  display: flex;
+  font-size: 16px;
+  color: #6d6e75;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s;
+  align-items: center;
+}
+main #explore .container .explore-headings .explore-headings-right i {
+  margin-top: -15px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+main #explore .container .explore-headings .explore-headings-right .disappear {
+  opacity: 0;
+}
+main #explore .container .explore-headings .explore-headings-right .visible {
+  transform: translate(20px, 0%);
+  opacity: 1;
+  position: absolute;
+  left: 130px;
+}
+main #explore .container .row .col-4 {
+  margin-top: 40px;
+}
+main #explore .container .row .col-4 .offer-card {
+  padding: 20px 40px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  border: 2px solid #eef0f6;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 400px;
+  transition: all 0.5s;
+}
+main #explore .container .row .col-4 .offer-card:hover {
+  color: white;
+  background-color: #2b4eff;
+  border: 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+main #explore .container .row .col-4 .offer-card:hover .offer-text h4 {
+  color: white;
+}
+main #explore .container .row .col-4 .offer-card:hover .offer-icon img {
+  filter: brightness(0) invert(1);
+}
+main #explore .container .row .col-4 .offer-card .offer-icon img {
+  width: 40px;
+  margin-right: 30px;
+}
+main #explore .container .row .col-4 .offer-card .offer-text h4 {
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 0;
+  color: #0e1133;
+  margin-top: 0;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+main #explore .container .row .col-4 .offer-card .offer-text p {
+  font-weight: 500;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+main #under-explore .row .col-6 {
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+main #under-explore .row .col-6 .recommendation-card {
+  position: relative;
+  background-image: url(../images/banner-bg-1.jpg);
+  background-size: cover;
+  border-radius: 5px;
+}
+main #under-explore .row .col-6 .recommendation-card .recommendation-card-left {
+  padding: 40px 0px 50px 40px;
+  width: 60%;
+  position: relative;
+  z-index: 1;
+}
+main #under-explore .row .col-6 .recommendation-card .recommendation-card-left span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background: #fc4389;
+  display: inline-block;
+  height: 20px;
+  line-height: 22px;
+  padding: 0 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+main #under-explore .row .col-6 .recommendation-card .recommendation-card-left .new {
+  background: #ff652e;
+}
+main #under-explore .row .col-6 .recommendation-card .recommendation-card-left h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #0e1133;
+  margin-top: 0;
+  font-weight: 700;
+  line-height: 1.2;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+main #under-explore .row .col-6 .recommendation-card .recommendation-card-left h3:hover {
+  color: #2b4eff;
+}
+main #under-explore .row .col-6 .recommendation-card .recommendation-card-left button {
+  height: 34px;
+  line-height: 36px;
+  padding: 0 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+main #under-explore .row .col-6 .recommendation-card .recommendation-card-left button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+main #under-explore .row .col-6 .recommendation-card .recommendation-card-right img {
+  position: absolute;
+  top: 30px;
+  left: 45%;
+}
+main #under-explore .row .col-6 .second {
+  background-image: url(../images/banner-bg-2.jpg);
+}
 
 @keyframes rotation {
   from {
@@ -334,13 +491,13 @@ main #intro .intro-background .row .col-2 .jumping-text h4 {
     width: 0;
   }
   15% {
-    width: 13%;
+    width: 12%;
   }
   85% {
     opacity: 1;
   }
   90% {
-    width: 13%;
+    width: 12%;
     opacity: 0;
   }
   100% {

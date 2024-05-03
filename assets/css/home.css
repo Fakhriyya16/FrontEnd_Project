@@ -1,5 +1,10 @@
-header {
-  background-color: #edeef3;
+* {
+  font-family: Hind, sans-serif;
+}
+
+header .bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: #edeef3 !important;
 }
 header nav {
   height: 100px;
@@ -8,38 +13,86 @@ header nav .container .dropdown-items {
   margin-left: 200px;
   gap: 10px;
 }
+header nav .container .dropdown-items a:hover {
+  color: #2b4eff;
+}
+header nav .container .dropdown-items a i {
+  font-size: 13px;
+}
+header nav .container .dropdown-items .list-group {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 200px;
+  background: #ffffff;
+  z-index: 99;
+  transition: all 0.3s ease-out 0s;
+  opacity: 0;
+  box-shadow: 0 30px 70px rgba(11, 6, 70, 0.0784313725);
+  border-radius: 0px;
+}
+header nav .container .dropdown-items .list-group li {
+  padding: 10px 25px;
+  font-size: 13px;
+  position: relative;
+  z-index: 1;
+  color: #0e1133;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #2b4eff 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+header nav .container .dropdown-items .list-group li:hover {
+  color: white;
+  background-position: left bottom;
+}
+header nav .container .dropdown-items .active-dropdown {
+  opacity: 1;
+}
 header nav .container .dropdown-items li {
   cursor: pointer;
   display: flex;
   transition: all 0.5s;
 }
-header nav .container .dropdown-items li i {
-  margin-top: 17px;
-  font-size: 12px;
-  margin-left: -4px;
-}
 header nav .container .dropdown-items .dropdown-toggle::after {
   display: none;
 }
-header nav .container .dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 48px;
+header nav .container .contact-li a:hover {
+  color: #2b4eff;
 }
-header nav .container .dropdown-menu {
+header nav .container .category-dropdown {
+  position: absolute;
+  list-style: none;
+  top: 80%;
+  left: 17%;
+  width: 200px;
+  background: #ffffff;
+  z-index: 99;
+  transition: all 0.3s ease-out 0s;
+  opacity: 0;
+  box-shadow: 0 30px 70px rgba(11, 6, 70, 0.0784313725);
   border-radius: 0px;
-  border: 1px solid rgba(236, 236, 236, 0.673);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-left: 0px;
 }
-header nav .container .dropdown-menu li {
-  height: 40px;
-  align-self: center;
-  border-bottom: 1px solid rgba(182, 182, 182, 0.673);
+header nav .container .category-dropdown li {
+  padding: 13px 25px 13px;
+  font-size: 13px;
+  position: relative;
+  z-index: 1;
+  color: #0e1133;
+  width: 100%;
+  color: #6d6e75;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.5s;
 }
-header nav .container .dropdown-menu .last {
-  border-bottom: 0px;
+header nav .container .category-dropdown li:hover {
+  color: #2b4eff;
 }
-header nav .container .contact-li {
-  margin-left: 20px;
+header nav .container .active-category {
+  opacity: 1;
 }
 header nav .container .logo {
   cursor: pointer;
@@ -51,15 +104,27 @@ header nav .container a {
 }
 header nav .container .category-border {
   border-left: 1px solid rgba(209, 209, 209, 0.712);
+  transition: all 0.5s;
 }
-header nav .container .category-border img {
-  margin-left: 20px;
-  cursor: pointer;
+header nav .container .category-border .nav-item div:first-child:hover i {
+  color: #2b4eff;
+}
+header nav .container .category-border .nav-item div:first-child:hover a {
+  color: #2b4eff;
 }
 header nav .container .category-border a {
   font-size: 16px;
   font-weight: 500;
   color: #0e1133;
+  transition: all 0.5s;
+}
+header nav .container .category-border .dots {
+  margin-top: 12px;
+  margin-left: 20px;
+}
+header nav .container .category-border .dots i {
+  padding: 0.5px;
+  transition: all 0.5s;
 }
 header nav .container .search-input {
   display: flex;
@@ -78,6 +143,9 @@ header nav .container .search-input input {
   padding: 15px 65px 15px 55px;
   position: relative;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+header nav .container .search-input input:focus {
+  border: 1px solid #2b4eff;
 }
 header nav .container .search-input input::-moz-placeholder {
   font-size: 0.9rem;
@@ -100,6 +168,9 @@ header nav .container .search-input .shop-icon {
   margin-right: -70px;
   border-left: 2px solid rgba(209, 209, 209, 0.712);
 }
+header nav .container .search-input .shop-icon:hover span {
+  background-color: #151a53;
+}
 header nav .container .search-input .shop-icon .fa-cart-shopping {
   font-size: 17px;
   margin-left: 10px;
@@ -114,6 +185,7 @@ header nav .container .search-input .shop-icon span {
   position: absolute;
   margin-left: -10px;
   margin-top: -10px;
+  transition: all 0.5s;
 }
 header nav .container .search-input button {
   height: 51.6px;
@@ -127,4 +199,163 @@ header nav .container .search-input button {
 }
 header nav .container .search-input button:hover {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+main #intro .intro-background {
+  background-color: #edeef3;
+  position: relative;
+  height: 800px;
+}
+main #intro .intro-background img {
+  position: absolute;
+}
+main #intro .intro-background img:first-child {
+  top: 440px;
+}
+main #intro .intro-background img:nth-child(2) {
+  left: 67%;
+  top: 369px;
+}
+main #intro .intro-background img:nth-child(3) {
+  left: 74%;
+  top: 139px;
+}
+main #intro .intro-background img:nth-child(4) {
+  top: 550px;
+  left: 50%;
+  animation: mover 2s infinite alternate;
+}
+main #intro .intro-background img:nth-child(5) {
+  left: 5%;
+  top: 137px;
+  animation: rotation 3s infinite linear;
+}
+main #intro .intro-background img:nth-child(6) {
+  left: 97%;
+  top: 411px;
+}
+main #intro .intro-background .row .col-6 {
+  margin-top: 250px;
+}
+main #intro .intro-background .row .col-6 span {
+  font-size: 50px;
+  line-height: 1;
+  color: #0e1133;
+}
+main #intro .intro-background .row .col-6 h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: #0e1133;
+  position: relative;
+  z-index: 1;
+}
+main #intro .intro-background .row .col-6 img {
+  position: absolute;
+  left: 7%;
+  top: 44%;
+  z-index: 0;
+  animation: section-animation 3s infinite;
+}
+main #intro .intro-background .row .col-6 p {
+  font-size: 22px;
+  color: #0e1133;
+  padding-right: 130px;
+  line-height: 30px;
+  margin-bottom: 28px;
+}
+main #intro .intro-background .row .col-6 button {
+  height: 50px;
+  text-align: center;
+  padding: 0 25px;
+  color: #fff;
+  background: #2b4eff;
+  border-radius: 4px;
+  font-weight: 500;
+}
+main #intro .intro-background .row .col-6 button:hover {
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(4, 23, 118, 0.3019607843);
+}
+main #intro .intro-background .row .col-4 img {
+  border-radius: 25% 25% 25% 25%/25% 0% 25% 0%;
+  width: 400px;
+  position: absolute;
+  top: 25%;
+}
+main #intro .intro-background .row .col-2 img {
+  margin-left: 5px;
+  border-radius: 25% 25% 25% 25%/0% 29% 0% 24%;
+  width: 200px;
+  position: absolute;
+  top: 30%;
+}
+main #intro .intro-background .row .col-2 .jumping-text {
+  position: absolute;
+  top: 65%;
+  right: 10%;
+  padding: 15px 25px 20px;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 30px 60px rgba(1, 11, 60, 0.1411764706);
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: hero-bounce;
+}
+main #intro .intro-background .row .col-2 .jumping-text p {
+  font-size: 14px;
+  color: #474956;
+}
+main #intro .intro-background .row .col-2 .jumping-text h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+@keyframes section-animation {
+  0% {
+    width: 0;
+  }
+  15% {
+    width: 13%;
+  }
+  85% {
+    opacity: 1;
+  }
+  90% {
+    width: 13%;
+    opacity: 0;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+@keyframes hero-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }/*# sourceMappingURL=home.css.map */

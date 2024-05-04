@@ -1,58 +1,57 @@
 "use strict";
 
 let dropdown = document.querySelector(".home");
-let categoryDropdown = document.querySelector(".category");
 let openedList = document.querySelector(".open-down");
+
+let categoryDropdown = document.querySelector(".category");
 let openedCategories = document.querySelector(".category-dropdown")
+
+let isDropdownOpen = false;
+let isCategoryDropdownOpen = false;
 
 function openDropdown() {
     openedList.classList.add("active-dropdown");
+    isDropdownOpen = true;
 }
 
 function closeDropdown() {
-    openedList.classList.remove("active-dropdown");
-}
-
-
-dropdown.addEventListener("mouseover", openDropdown);
-
-
-dropdown.addEventListener("mouseout", closeDropdown);
-
-
-openedList.addEventListener("mouseover", openDropdown);
-
-
-document.addEventListener("mouseover", function (event) {
-
-    if (!dropdown.contains(event.target) && !openedList.contains(event.target)) {
-        closeDropdown();
+    if (!isDropdownOpen) {
+        openedList.classList.remove("active-dropdown");
     }
-});
-
+}
 
 function openCategoryDropdown() {
     openedCategories.classList.add("active-category");
+    isCategoryDropdownOpen = true;
 }
 
 function closeCategoryDropdown() {
-    openedCategories.classList.remove("active-category");
+    if (!isCategoryDropdownOpen) {
+        openedCategories.classList.remove("active-category");
+    }
 }
 
-
-categoryDropdown.addEventListener("mouseover", openCategoryDropdown);
-openedCategories.addEventListener("mouseover", openCategoryDropdown);
-
-
-categoryDropdown.addEventListener("mouseout", function (event) {
-
-    if (!categoryDropdown.contains(event.relatedTarget) && !openedCategories.contains(event.relatedTarget)) {
-        closeCategoryDropdown();
-    }
+dropdown.addEventListener("mouseover", openDropdown);
+dropdown.addEventListener("mouseout", closeDropdown);
+openedList.addEventListener("mouseover", function() {
+    isDropdownOpen = true;
+});
+openedList.addEventListener("mouseout", function() {
+    isDropdownOpen = false;
 });
 
-openedCategories.addEventListener("mouseout", function (event) {
-    if (!categoryDropdown.contains(event.relatedTarget) && !openedCategories.contains(event.relatedTarget)) {
+categoryDropdown.addEventListener("mouseover", openCategoryDropdown);
+categoryDropdown.addEventListener("mouseout", closeCategoryDropdown);
+openedCategories.addEventListener("mouseover", function() {
+    isCategoryDropdownOpen = true;
+});
+openedCategories.addEventListener("mouseout", function() {
+    isCategoryDropdownOpen = false;
+});
+
+document.addEventListener("mouseover", function(event) {
+    if (!isDropdownOpen && !isCategoryDropdownOpen) {
+        closeDropdown();
         closeCategoryDropdown();
     }
 });
@@ -84,3 +83,76 @@ function stickynavbar() {
   }
 }
 window.addEventListener('scroll', stickynavbar);
+
+
+let allBtn = document.querySelector(".all");
+let popularBtn = document.querySelector(".popular");
+let trendBtn = document.querySelector(".trend");
+let featuredBtn = document.querySelector(".featured");
+let artBtn = document.querySelector(".art");
+let tabList = document.querySelectorAll(".tab-list li");
+
+let courses = document.querySelectorAll(".card");
+
+allBtn.addEventListener("click",function(){
+    tabList.forEach(li => {
+        li.style.color = "#0e1133";
+    });
+    this.style.color = "#2b4eff";
+    courses.forEach(course => {
+        course.classList.remove("d-none");
+    });
+    
+})
+
+popularBtn.addEventListener("click",function(){
+    tabList.forEach(li => {
+        li.style.color = "#0e1133";
+    });
+    this.style.color = "#2b4eff";
+    courses.forEach(course => {
+        course.classList.add("d-none");
+        if(course.classList.contains("popular-card")){
+            course.classList.remove("d-none");
+        }
+    });
+})
+
+trendBtn.addEventListener("click",function(){
+    tabList.forEach(li => {
+        li.style.color = "#0e1133";
+    });
+    this.style.color = "#2b4eff";
+    courses.forEach(course => {
+        course.classList.add("d-none");
+        if(course.classList.contains("trending-card")){
+            course.classList.remove("d-none");
+        }
+    });
+})
+
+featuredBtn.addEventListener("click",function(){
+    tabList.forEach(li => {
+        li.style.color = "#0e1133";
+    });
+    this.style.color = "#2b4eff";
+    courses.forEach(course => {
+        course.classList.add("d-none");
+        if(course.classList.contains("featured-card")){
+            course.classList.remove("d-none");
+        }
+    });
+})
+
+artBtn.addEventListener("click",function(){
+    tabList.forEach(li => {
+        li.style.color = "#0e1133";
+    });
+    this.style.color = "#2b4eff";
+    courses.forEach(course => {
+        course.classList.add("d-none");
+        if(course.classList.contains("art-card")){
+            course.classList.remove("d-none");
+        }
+    });
+})

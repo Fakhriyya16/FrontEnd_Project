@@ -156,3 +156,20 @@ artBtn.addEventListener("click",function(){
         }
     });
 })
+
+let monthlyBtn = document.querySelector(".monthly");
+let annualBtn = document.querySelector(".annual");
+
+monthlyBtn.addEventListener("click",function(){
+    this.classList.add("btn-primary");
+    this.classList.remove("btn-light")
+    annualBtn.classList.remove("btn-primary");
+    annualBtn.classList.add("btn-light")
+})
+
+annualBtn.addEventListener("click",function(){
+    this.classList.add("btn-primary");
+    this.classList.remove("btn-light")
+    monthlyBtn.classList.remove("btn-primary");
+    monthlyBtn.classList.add("btn-light")
+})

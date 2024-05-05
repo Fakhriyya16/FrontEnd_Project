@@ -128,32 +128,6 @@ function stickynavbar() {
 }
 window.addEventListener('scroll', stickynavbar);
 
-
-let windowIcon = document.querySelector(".grid-icon");
-let listIcon = document.querySelector(".list-icon");
-
-let shortCards = document.querySelector(".short");
-let longCards = document.querySelector(".long");
-
-
-windowIcon.addEventListener("click", function(){
-    this.classList.remove("grid-icon");
-    this.classList.add("list-icon");
-    listIcon.classList.add("grid-icon");
-    listIcon.classList.remove("list-icon");
-    shortCards.classList.remove("d-none");
-    longCards.classList.add("d-none");
-})
-
-listIcon.addEventListener("click", function(){
-    this.classList.remove("grid-icon");
-    this.classList.add("list-icon");
-    windowIcon.classList.add("grid-icon");
-    windowIcon.classList.remove("list-icon");
-    shortCards.classList.add("d-none");
-    longCards.classList.remove("d-none");
-})
-
 let pages = document.querySelectorAll(".pagination .num");
 
 pages.forEach(page => {
@@ -162,4 +136,3 @@ pages.forEach(page => {
         this.classList.add("active");
     })
 });
-

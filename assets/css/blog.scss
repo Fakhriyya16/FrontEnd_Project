@@ -12,6 +12,7 @@ header {
         position: fixed;
         top: 0;
         left: 6%;
+
         .container {
             .dropdown-items {
                 margin-left: 200px;
@@ -96,6 +97,8 @@ header {
             }
 
             .contact-li {
+                margin-right: 16px;
+
                 a {
                     color: white !important;
                 }
@@ -527,7 +530,7 @@ main {
             .container {
                 .row {
                     .col-12 {
-                        margin-left: 65px;
+                        margin-left: 10px;
 
                         h1 {
                             margin-top: 30px;
@@ -557,615 +560,376 @@ main {
         }
     }
 
-    #find-courses {
-        padding-top: 500px;
+    #body-part {
+        margin-top: 600px;
         padding-bottom: 200px;
-
         .container {
-            padding: 60px 0px;
-
-            .page-navigation {
-                background-color: #edeef3;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 15px 20px;
-                border-radius: 4px;
-                margin: 0 auto;
-                margin-bottom: 40px;
-                width: 97.5%;
-
-                .pn-left {
-                    span {
-                        font-size: 15px;
-                        font-weight: 500;
-                        color: #6d6e75;
-                        margin-left: 10px;
-                    }
-
-                    .grid-icon {
-                        background-color: transparent;
-                        padding: 8px;
-                        border-radius: 4px;
-                        color: #6d6e75;
-                        cursor: pointer;
-                    }
-
-                    .list-icon {
-                        background-color: #2b4eff;
-                        padding: 8px;
-                        border-radius: 4px;
-                        color: white;
-                        cursor: pointer;
-                    }
-                }
-            }
-
-            .pn-right {
-                select {
-                    cursor: pointer;
-                    border: none;
-                    outline: none;
-                    width: 160px;
-                    height: 35px;
-                    padding: 0 20px 0px;
-                    font-size: 15px;
-                    color: #53545b;
-                    font-weight: 500;
-                    border-radius: 4px;
-                }
-            }
-
             .row {
-                .col-4 {
-                    padding: 0px;
-                    width: 410px;
-                    margin-left: 27px;
-                    margin-bottom: 20px;
+                .col-8 {
+                    .row {
+                        .col-6 {
+                            .blog-card {
+                                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                                width: 370px;
+                                border-radius: 5px;
 
-                    .course-card {
-                        border-radius: 6px;
-                        background: #ffffff;
+                                .card-top {
+                                    overflow: hidden;
 
-                        .card-upper {
-                            overflow: hidden;
-                            position: relative;
+                                    img {
+                                        width: 100%;
+                                        transition: all 0.5s;
+                                        cursor: pointer;
+                                        border-top-left-radius: 5px;
+                                        border-top-right-radius: 5px;
 
-                            span {
-                                height: 24px;
-                                line-height: 24px;
-                                font-size: 14px;
-                                font-weight: 500;
-                                color: #fff;
-                                background: #b128ff;
-                                padding: 0 10px;
-                                border-radius: 4px;
-                                position: absolute;
-                                top: 8%;
-                                left: 4%;
-                                z-index: 1;
-                                cursor: pointer;
-                            }
-
-                            img {
-                                width: 100%;
-                                cursor: pointer;
-                                transition: all 0.5s;
-                                z-index: 0;
-                                border-top-left-radius: 6px;
-                                border-top-right-radius: 6px;
-
-                                &:hover {
-                                    transform: scale(1.1, 1.1);
-                                }
-                            }
-                        }
-                    }
-
-                    .card-middle {
-                        padding: 25px 30px 0px;
-
-                        .rating {
-                            .rating-top {
-                                display: flex;
-                                justify-content: space-between;
-
-                                .rating-left {
-                                    span {
-                                        font-size: 16px;
-                                        font-weight: 400;
-                                        color: #6d6e75;
-                                    }
-
-                                    i {
-                                        color: #53545b;
-                                        padding-right: 7px;
+                                        &:hover {
+                                            transform: scale(1.1, 1.1);
+                                        }
                                     }
                                 }
 
-                                .rating-right {
-                                    i {
-                                        padding-right: 5px;
-                                        color: #ff9415;
-                                    }
+                                .card-middle {
+                                    padding: 20px 20px 10px;
 
                                     span {
-                                        font-size: 16px;
-                                        font-weight: 400;
-                                        color: #6d6e75;
+                                        background: rgba(48, 168, 32, .1);
+                                        color: #30a820;
+                                        transition: all 0.5s;
+                                        border-radius: 4px;
+                                        height: 20px;
+                                        font-size: 14px;
+                                        padding: 2px 6px;
+                                        cursor: pointer;
+
+                                        &:hover {
+                                            background: #30a820;
+                                            color: #fff;
+                                        }
                                     }
-                                }
-                            }
-
-                            .card-name {
-                                margin-top: 10px;
-
-                                h4 {
-                                    font-size: 20px;
-                                    font-weight: 600;
-                                    margin-bottom: 20px;
-                                    cursor: pointer;
-                                    transition: all 0.5s;
-
-                                    &:hover {
-                                        color: #2b4eff;
-                                    }
-                                }
-
-                                img {
-                                    width: 35px;
-                                    height: 35px;
-                                    border: 2px solid #ffffff;
-                                    border-radius: 50%;
-                                    box-shadow: 0 10px 14px #010b3c1a;
-                                }
-
-                                span {
-                                    font-size: 16px;
-                                    font-weight: 500;
-                                    color: #53545b;
-                                    padding-top: 2px;
-                                    cursor: pointer;
-                                    transition: all 0.5s;
-
-                                    &:hover {
-                                        color: #2b4eff;
-                                    }
-                                }
-
-                                hr {
-                                    width: 117%;
-                                    margin-left: -30px;
-                                    border: 0.3px solid rgba(177, 177, 177, 0.597);
-                                }
-                            }
-                        }
-                    }
-
-                    .card-bottom {
-                        display: flex;
-                        justify-content: space-between;
-                        padding: 0px 30px 10px;
-
-                        .prices {
-                            display: flex;
-                            align-items: center;
-
-                            .first {
-                                font-size: 22px;
-                                color: #b128ff;
-                                font-weight: 700;
-                                padding-right: 5px;
-                            }
-
-                            .second {
-                                font-size: 15px;
-                                color: #6d6e75;
-                                text-decoration: line-through;
-                                font-weight: 700;
-                            }
-                        }
-
-                        .details {
-                            display: flex;
-                            align-items: center;
-                            transition: all 0.5s;
-
-                            &:hover {
-                                span {
-                                    color: #2b4eff;
-                                }
-
-                                color: #2b4eff;
-                            }
-
-                            span {
-                                color: #0e1133;
-                                font-size: 16px;
-                                font-weight: 500;
-                                display: inline-block;
-                                cursor: pointer;
-                                margin-right: 7px;
-                                transition: all 0.5s;
-                            }
-
-                            i {
-                                font-size: 14px;
-                            }
-                        }
-
-                    }
-
-                    .card2 {
-                        .card-upper {
-                            span {
-                                background-color: #0fa0dd;
-                            }
-                        }
-
-                        .card-bottom {
-                            .prices {
-                                .first {
-                                    color: #0fa0dd;
-                                }
-                            }
-                        }
-                    }
-
-                    .card3 {
-                        .card-upper {
-                            span {
-                                background-color: #30a820;
-                            }
-                        }
-
-                        .card-bottom {
-                            .prices {
-                                .first {
-                                    color: #30a820;
-                                }
-                            }
-                        }
-                    }
-
-                    .card4 {
-                        .card-upper {
-                            span {
-                                background-color: #3b60ff;
-                            }
-                        }
-
-                        .card-bottom {
-                            .prices {
-                                .first {
-                                    color: #3b60ff;
-                                }
-                            }
-                        }
-                    }
-
-                    .card5 {
-                        .card-upper {
-                            span {
-                                background-color: #fa7919;
-                            }
-                        }
-
-                        .card-bottom {
-                            .prices {
-                                .first {
-                                    color: #fa7919;
-                                }
-                            }
-                        }
-                    }
-
-                    .card6 {
-                        .card-upper {
-                            span {
-                                background-color: #f2277e;
-                            }
-                        }
-
-                        .card-bottom {
-                            .prices {
-                                .first {
-                                    color: #f2277e;
-                                }
-                            }
-                        }
-                    }
-
-                    .card7 {
-                        .card-upper {
-                            span {
-                                background-color: #fa7919;
-                            }
-                        }
-
-                        .card-bottom {
-                            .prices {
-                                .first {
-                                    color: #fa7919;
-                                }
-                            }
-                        }
-                    }
-
-                    .card8 {
-                        .card-upper {
-                            span {
-                                background-color: #f2277e;
-                            }
-                        }
-
-                        .card-bottom {
-                            .prices {
-                                .first {
-                                    color: #f2277e;
-                                }
-                            }
-                        }
-                    }
-
-                    .card9 {
-                        .card-upper {
-                            span {
-                                background-color: #5744cb;
-                            }
-                        }
-
-                        .card-bottom {
-                            .prices {
-                                .first {
-                                    color: #5744cb;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .long {
-                .col-12 {
-                    .long-cards {
-                        .long-card {
-                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                            border-radius: 6px;
-                            background: #ffffff;
-                            display: flex;
-                            margin-left: 15px;
-                            width: 97%;
-                            transition: all 0.5s;
-                            &:hover{
-                                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-                            }
-
-                            .image-part {
-                                overflow: hidden;
-                                position: relative;
-                                width: 420px;
-
-                                span {
-                                    height: 24px;
-                                    line-height: 24px;
-                                    font-size: 14px;
-                                    font-weight: 500;
-                                    color: #fff;
-                                    background: #b128ff;
-                                    padding: 0 10px;
-                                    border-radius: 4px;
-                                    position: absolute;
-                                    top: 8%;
-                                    left: 4%;
-                                    z-index: 20;
-                                    cursor: pointer;
-                                }
-
-                                img {
-                                    width: 100%;
-                                    cursor: pointer;
-                                    transition: all 0.5s;
-                                    z-index: 0;
-
-                                    &:hover {
-                                        transform: scale(1.1, 1.1);
-                                    }
-                                }
-                            }
-
-                            .description-part {
-                                margin-left: 60px;
-                                margin-top: 40px;
-
-                                .rating {
-                                    span {
-                                        font-size: 16px;
-                                        font-weight: 400;
-                                        color: #6d6e75;
-                                    }
-
-                                    i {
-                                        color: #53545b;
-                                        padding-right: 7px;
-                                    }
-
-                                    .fa-star {
-                                        margin-left: 20px;
-                                    }
-                                }
-
-                                .card-name {
-                                    width: 65%;
 
                                     h3 {
-                                        font-size: 32px;
-                                        font-weight: 600;
-                                        margin-top: 20px;
-                                        margin-bottom: 10px;
+                                        margin-top: 10px;
+                                        font-size: 20px;
+                                        margin-bottom: 35px;
+                                        color: #0e1133;
+                                        font-weight: 700;
+                                        transition: all .3s ease-out 0s;
                                         cursor: pointer;
-                                        transition: all 0.5s;
 
                                         &:hover {
                                             color: #2b4eff;
                                         }
                                     }
 
-                                    p {
-                                        font-size: 16px;
-                                        font-weight: 400;
-                                        color: #6d6e75;
-                                        margin-bottom: 15px;
-                                    }
                                 }
 
-                                .teacher {
-                                    img {
-                                        width: 35px;
-                                        height: 35px;
-                                        border: 2px solid #ffffff;
-                                        border-radius: 50%;
-                                        box-shadow: 0 10px 14px #010b3c1a;
-                                    }
-
-                                    span {
-                                        font-size: 16px;
-                                        font-weight: 500;
-                                        color: #53545b;
-                                        padding-top: 2px;
-                                        cursor: pointer;
-                                        transition: all 0.5s;
-
-                                        &:hover {
-                                            color: #2b4eff;
-                                        }
-                                    }
-                                }
-
-                                hr {
-                                    margin-top: 75px;
-                                    width: 115%;
-                                    margin-left: -61px;
-                                    border: 0.3px solid rgba(177, 177, 177, 0.597);
-                                }
-
-                                .long-card-bottom {
+                                .card-bottom {
                                     display: flex;
-                                    align-items: center;
                                     justify-content: space-between;
-                                    width: 103%;
-                                    padding-bottom: 10px;
+                                    align-items: center;
+                                    padding: 0px 20px 20px;
 
-                                    .prices {
-                                        display: flex;
-                                        align-items: center;
-
-                                        .first {
-                                            font-size: 25px;
-                                            color: #b128ff;
-                                            font-weight: 700;
-                                            padding-right: 5px;
-                                        }
-
-                                        .second {
-                                            margin-left: 7px;
-                                            font-size: 18px;
-                                            color: #6d6e75;
-                                            text-decoration: line-through;
-                                            font-weight: 700;
-                                        }
-                                    }
-
-                                    .details {
-                                        display: flex;
-                                        align-items: center;
-                                        transition: all 0.5s;
-
-                                        &:hover {
-                                            span {
-                                                color: #2b4eff;
-                                            }
-
-                                            color: #2b4eff;
+                                    .bottom-left {
+                                        img {
+                                            width: 35px;
+                                            height: 35px;
+                                            border: 2px solid #ffffff;
+                                            border-radius: 50%;
+                                            box-shadow: 0 10px 14px #010b3c1a;
                                         }
 
                                         span {
-                                            color: #0e1133;
-                                            font-size: 17px;
+                                            font-size: 16px;
                                             font-weight: 500;
-                                            display: inline-block;
+                                            color: #53545b;
+                                            padding-top: 2px;
                                             cursor: pointer;
-                                            margin-right: 7px;
                                             transition: all 0.5s;
-                                        }
 
+                                            &:hover {
+                                                color: #2b4eff;
+                                            }
+                                        }
+                                    }
+
+                                    .bottom-right {
                                         i {
                                             font-size: 14px;
+                                            color: #53545b;
+                                        }
+
+                                        span {
+                                            font-size: 14px;
+                                            color: #53545b;
+                                            font-weight: 500;
                                         }
                                     }
                                 }
                             }
-                        }
-                        .card-two{
-                            .image-part{
-                                span{
-                                    background-color: #0fa0dd;
-                                }
-                            }
-                            .description-part{
-                                .long-card-bottom{
-                                    .prices{
-                                        .first{
-                                            color: #0fa0dd;
+
+                            .card-2 {
+                                .card-middle {
+                                    span {
+                                        color: #0fa0dd;
+                                        background: rgba(15, 160, 221, .1);
+
+                                        &:hover {
+                                            color: white;
+                                            background: #0fa0dd;
                                         }
                                     }
                                 }
                             }
-                        }
-                        .card-three{
-                            .image-part{
-                                span{
-                                    background-color: #30a820;
+
+                            .card-3 {
+                                .card-middle {
+                                    span {
+                                        background: rgba(48, 168, 32, .1);
+                                        color: #30a820;
+
+                                        &:hover {
+                                            color: white;
+                                            background: #30a820;
+                                        }
+                                    }
                                 }
                             }
-                            .description-part{
-                                .long-card-bottom{
-                                    .prices{
-                                        .first{
-                                            color: #30a820;
+
+                            .card-4 {
+                                .card-middle {
+                                    span {
+                                        background: rgba(43, 78, 255, .1);
+                                        color: #2b4eff;
+
+                                        &:hover {
+                                            color: white;
+                                            background: #2b4eff;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .card-5 {
+                                .card-middle {
+                                    span {
+                                        background: rgba(250, 121, 25, .1);
+                                        color: #fa7919;
+
+                                        &:hover {
+                                            color: white;
+                                            background: #fa7919;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .card-6 {
+                                .card-middle {
+                                    span {
+                                        background: rgba(242, 39, 126, .1);
+                                        color: #f2277e;
+
+                                        &:hover {
+                                            color: white;
+                                            background: #f2277e;
                                         }
                                     }
                                 }
                             }
                         }
                     }
+                    .pagination{
+                        nav {
+                            margin-top: 30px;
+                
+                            ul {
+                                cursor: pointer;
+                
+                                li {
+                                    color: #0e1133;
+                                }
+                
+                                span {
+                                    color: #0e1133;
+                                }
+                            }
+                
+                            .active {
+                                color: white;
+                            }
+                        }
+                    }
                 }
-            }
-        }
 
-        nav {
-            margin-top: 30px;
-            margin-left: 15px;
+                .col-4 {
+                    .srch-input {
+                        input {
+                            width: 75%;
+                            height: 60px;
+                            line-height: 56px;
+                            background: #f3f4f8;
+                            border: 2px solid #f3f4f8;
+                            border-radius: 4px;
+                            padding-left: 30px;
+                            padding-right: 45px;
+                            position: relative;
 
-            ul {
-                cursor: pointer;
+                            &:focus {
+                                outline: 1.7px solid #2b4eff;
+                            }
+                        }
 
-                li {
-                    color: #0e1133;
+                        ::placeholder {
+                            font-size: 13px;
+                            font-weight: 500;
+                        }
+
+
+                        i {
+                            position: absolute;
+                            margin-top: 17px;
+                            margin-left: -40px;
+                            font-size: 18px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .recent-posts {
+                        margin-top: 50px;
+
+                        h3 {
+                            font-size: 20px;
+                            padding-bottom: 7px;
+                            color: #0e1133;
+                            font-weight: 700;
+                        }
+
+                        hr {
+                            width: 75%;
+                            margin-top: -3px;
+                            border: 1px solid #b7b7b7;
+                        }
+
+                        .post-card {
+                            height: 75px;
+                            display: flex;
+
+                            .left-card {
+                                img {
+                                    width: 75px;
+                                    height: 75px;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .right-card {
+                                margin-left: 20px;
+                                width: 60%;
+
+                                span {
+                                    color: #53545b;
+                                    font-weight: 500;
+                                    font-size: 15px;
+                                    display: inline-block;
+                                }
+
+                                h4 {
+                                    font-size: 18px;
+                                    color: #0e1133;
+                                    font-weight: 600;
+                                    line-height: 1.3;
+                                    transition: all 0.5s;
+                                    cursor: pointer;
+
+                                    &:hover {
+                                        color: #2b4eff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .categories {
+                        margin-top: 70px;
+
+                        h3 {
+                            font-size: 20px;
+                            padding-bottom: 7px;
+                            color: #0e1133;
+                            font-weight: 700;
+                        }
+
+                        hr {
+                            width: 75%;
+                            margin-top: -3px;
+                            border: 1px solid #b7b7b7;
+                        }
+
+                        ul {
+                            margin-top: 30px;
+
+                            li {
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: #53545b;
+                                padding-left: 15px;
+                                margin-top: 13px;
+                                transition: all 0.5s;
+                                cursor: pointer;
+
+                                &:hover {
+                                    color: #2b4eff;
+                                }
+                            }
+                        }
+                    }
+
+                    .tags {
+                        margin-top: 50px;
+                        h3 {
+                            font-size: 20px;
+                            padding-bottom: 7px;
+                            color: #0e1133;
+                            font-weight: 700;
+                        }
+
+                        hr {
+                            margin-top: -3px;
+                            width: 75%;
+                            border: 1px solid #b7b7b7;
+                        }
+                        .buttons{
+                            width: 75%;
+                            button {
+                                height: 36px;
+                                padding: 0 15px;
+                                font-size: 15px;
+                                font-weight: 500;
+                                color: #53545b;
+                                background: #f3f4f8;
+                                border-radius: 4px;
+                                margin-right: 8px;
+                                margin-bottom: 10px;
+                                border: none;
+                                transition: all 0.5s;
+                                &:hover{
+                                    background-color: #2b4eff;
+                                    color: white;
+                                }
+                            }
+                        }
+
+                    }
+
+                    .last-image {
+                        margin-top: 50px;
+                    }
                 }
-
-                span {
-                    color: #0e1133;
-                }
-            }
-
-            .active {
-                color: white;
             }
         }
     }
 }
-
 footer {
     background-color: #141130;
     position: relative;
@@ -1445,6 +1209,13 @@ footer {
         }
     }
 }
+
+
+
+
+
+
+
 
 @keyframes rotation {
     from {

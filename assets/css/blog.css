@@ -769,6 +769,15 @@ footer #adv-box .adv-div .adv-left button {
   left: 80%;
   top: 42%;
   color: #0e1133;
+  height: 54px;
+  background: #ffffff;
+  padding: 0 45px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+footer #adv-box .adv-div .adv-left button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 footer #footer-main {
   padding-bottom: 50px;

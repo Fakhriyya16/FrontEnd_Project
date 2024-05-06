@@ -2,7 +2,12 @@
   font-family: Hind, sans-serif;
 }
 
+header {
+  display: flex;
+  background-color: #edeef3;
+}
 header nav {
+  width: 100%;
   height: 100px;
   background-color: #edeef3;
 }
@@ -236,36 +241,36 @@ main #intro .intro-background img:nth-child(6) {
   left: 96%;
   top: 411px;
 }
-main #intro .intro-background .row .col-6 {
+main #intro .intro-background .row .col-lg-6 {
   margin-top: 250px;
 }
-main #intro .intro-background .row .col-6 span {
+main #intro .intro-background .row .col-lg-6 span {
   font-size: 50px;
   line-height: 1;
   color: #0e1133;
 }
-main #intro .intro-background .row .col-6 h1 {
+main #intro .intro-background .row .col-lg-6 h1 {
   font-size: 60px;
   font-weight: 600;
   color: #0e1133;
   position: relative;
   z-index: 1;
 }
-main #intro .intro-background .row .col-6 img {
+main #intro .intro-background .row .col-lg-6 img {
   position: absolute;
   left: 7%;
   top: 44%;
   z-index: 0;
   animation: section-animation 3s infinite;
 }
-main #intro .intro-background .row .col-6 p {
+main #intro .intro-background .row .col-lg-6 p {
   font-size: 22px;
   color: #0e1133;
   padding-right: 130px;
   line-height: 30px;
   margin-bottom: 28px;
 }
-main #intro .intro-background .row .col-6 button {
+main #intro .intro-background .row .col-lg-6 button {
   height: 50px;
   text-align: center;
   padding: 0 25px;
@@ -274,11 +279,11 @@ main #intro .intro-background .row .col-6 button {
   border-radius: 4px;
   font-weight: 500;
 }
-main #intro .intro-background .row .col-6 button:hover {
+main #intro .intro-background .row .col-lg-6 button:hover {
   color: #fff;
   box-shadow: 0 10px 24px rgba(4, 23, 118, 0.3019607843);
 }
-main #intro .intro-background .row .col-4 img {
+main #intro .intro-background .row .col-lg-4 img {
   border-radius: 25% 25% 25% 25%/25% 0% 25% 0%;
   width: 400px;
   position: absolute;
@@ -361,10 +366,10 @@ main #explore .container .explore-headings .explore-headings-right .visible {
   position: absolute;
   left: 130px;
 }
-main #explore .container .row .col-4 {
+main #explore .container .row .col-lg-4 {
   margin-top: 40px;
 }
-main #explore .container .row .col-4 .offer-card {
+main #explore .container .row .col-lg-4 .offer-card {
   padding: 20px 40px;
   margin-bottom: 30px;
   border-radius: 6px;
@@ -375,23 +380,23 @@ main #explore .container .row .col-4 .offer-card {
   width: 400px;
   transition: all 0.5s;
 }
-main #explore .container .row .col-4 .offer-card:hover {
+main #explore .container .row .col-lg-4 .offer-card:hover {
   color: white;
   background-color: #2b4eff;
   border: 0px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
-main #explore .container .row .col-4 .offer-card:hover .offer-text h4 {
+main #explore .container .row .col-lg-4 .offer-card:hover .offer-text h4 {
   color: white;
 }
-main #explore .container .row .col-4 .offer-card:hover .offer-icon img {
+main #explore .container .row .col-lg-4 .offer-card:hover .offer-icon img {
   filter: brightness(0) invert(1);
 }
-main #explore .container .row .col-4 .offer-card .offer-icon img {
+main #explore .container .row .col-lg-4 .offer-card .offer-icon img {
   width: 40px;
   margin-right: 30px;
 }
-main #explore .container .row .col-4 .offer-card .offer-text h4 {
+main #explore .container .row .col-lg-4 .offer-card .offer-text h4 {
   font-size: 20px;
   line-height: 1;
   margin-bottom: 0;
@@ -400,28 +405,28 @@ main #explore .container .row .col-4 .offer-card .offer-text h4 {
   font-weight: 700;
   transition: all 0.5s;
 }
-main #explore .container .row .col-4 .offer-card .offer-text p {
+main #explore .container .row .col-lg-4 .offer-card .offer-text p {
   font-weight: 500;
   margin-bottom: 0;
   font-size: 16px;
 }
-main #under-explore .row .col-6 {
+main #under-explore .row .col-lg-6 {
   margin-top: 50px;
   padding-bottom: 100px;
 }
-main #under-explore .row .col-6 .recommendation-card {
+main #under-explore .row .col-lg-6 .recommendation-card {
   position: relative;
   background-image: url(../images/banner-bg-1.jpg);
   background-size: cover;
   border-radius: 5px;
 }
-main #under-explore .row .col-6 .recommendation-card .recommendation-card-left {
+main #under-explore .row .col-lg-6 .recommendation-card .recommendation-card-left {
   padding: 40px 0px 50px 40px;
   width: 60%;
   position: relative;
   z-index: 1;
 }
-main #under-explore .row .col-6 .recommendation-card .recommendation-card-left span {
+main #under-explore .row .col-lg-6 .recommendation-card .recommendation-card-left span {
   font-size: 14px;
   font-weight: 500;
   color: #fff;
@@ -433,10 +438,10 @@ main #under-explore .row .col-6 .recommendation-card .recommendation-card-left s
   margin-bottom: 15px;
   border-radius: 10px;
 }
-main #under-explore .row .col-6 .recommendation-card .recommendation-card-left .new {
+main #under-explore .row .col-lg-6 .recommendation-card .recommendation-card-left .new {
   background: #ff652e;
 }
-main #under-explore .row .col-6 .recommendation-card .recommendation-card-left h3 {
+main #under-explore .row .col-lg-6 .recommendation-card .recommendation-card-left h3 {
   font-size: 28px;
   margin-bottom: 30px;
   color: #0e1133;
@@ -446,10 +451,10 @@ main #under-explore .row .col-6 .recommendation-card .recommendation-card-left h
   transition: all 0.5s;
   cursor: pointer;
 }
-main #under-explore .row .col-6 .recommendation-card .recommendation-card-left h3:hover {
+main #under-explore .row .col-lg-6 .recommendation-card .recommendation-card-left h3:hover {
   color: #2b4eff;
 }
-main #under-explore .row .col-6 .recommendation-card .recommendation-card-left button {
+main #under-explore .row .col-lg-6 .recommendation-card .recommendation-card-left button {
   height: 34px;
   line-height: 36px;
   padding: 0 20px;
@@ -458,15 +463,15 @@ main #under-explore .row .col-6 .recommendation-card .recommendation-card-left b
   font-weight: 500;
   cursor: pointer;
 }
-main #under-explore .row .col-6 .recommendation-card .recommendation-card-left button:hover {
+main #under-explore .row .col-lg-6 .recommendation-card .recommendation-card-left button:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
-main #under-explore .row .col-6 .recommendation-card .recommendation-card-right img {
+main #under-explore .row .col-lg-6 .recommendation-card .recommendation-card-right img {
   position: absolute;
   top: 30px;
   left: 45%;
 }
-main #under-explore .row .col-6 .second {
+main #under-explore .row .col-lg-6 .second {
   background-image: url(../images/banner-bg-2.jpg);
 }
 main #find-courses {
@@ -518,21 +523,21 @@ main #find-courses .container .tab-headings ul li:hover {
 main #find-courses .container .tab-headings ul .first {
   color: #2b4eff;
 }
-main #find-courses .container .row .col-4 {
+main #find-courses .container .row .col-lg-4 {
   padding: 0px;
   width: 410px;
   margin-right: 30px;
   margin-bottom: 20px;
 }
-main #find-courses .container .row .col-4 .course-card {
+main #find-courses .container .row .col-lg-4 .course-card {
   border-radius: 6px;
   background: #ffffff;
 }
-main #find-courses .container .row .col-4 .course-card .card-upper {
+main #find-courses .container .row .col-lg-4 .course-card .card-upper {
   overflow: hidden;
   position: relative;
 }
-main #find-courses .container .row .col-4 .course-card .card-upper span {
+main #find-courses .container .row .col-lg-4 .course-card .card-upper span {
   height: 24px;
   line-height: 24px;
   font-size: 14px;
@@ -547,7 +552,7 @@ main #find-courses .container .row .col-4 .course-card .card-upper span {
   z-index: 1;
   cursor: pointer;
 }
-main #find-courses .container .row .col-4 .course-card .card-upper img {
+main #find-courses .container .row .col-lg-4 .course-card .card-upper img {
   width: 100%;
   cursor: pointer;
   transition: all 0.5s;
@@ -555,55 +560,55 @@ main #find-courses .container .row .col-4 .course-card .card-upper img {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
-main #find-courses .container .row .col-4 .course-card .card-upper img:hover {
+main #find-courses .container .row .col-lg-4 .course-card .card-upper img:hover {
   transform: scale(1.1, 1.1);
 }
-main #find-courses .container .row .col-4 .card-middle {
+main #find-courses .container .row .col-lg-4 .card-middle {
   padding: 25px 30px 0px;
 }
-main #find-courses .container .row .col-4 .card-middle .rating .rating-top {
+main #find-courses .container .row .col-lg-4 .card-middle .rating .rating-top {
   display: flex;
   justify-content: space-between;
 }
-main #find-courses .container .row .col-4 .card-middle .rating .rating-top .rating-left span {
+main #find-courses .container .row .col-lg-4 .card-middle .rating .rating-top .rating-left span {
   font-size: 16px;
   font-weight: 400;
   color: #6d6e75;
 }
-main #find-courses .container .row .col-4 .card-middle .rating .rating-top .rating-left i {
+main #find-courses .container .row .col-lg-4 .card-middle .rating .rating-top .rating-left i {
   color: #53545b;
   padding-right: 7px;
 }
-main #find-courses .container .row .col-4 .card-middle .rating .rating-top .rating-right i {
+main #find-courses .container .row .col-lg-4 .card-middle .rating .rating-top .rating-right i {
   padding-right: 5px;
   color: #ff9415;
 }
-main #find-courses .container .row .col-4 .card-middle .rating .rating-top .rating-right span {
+main #find-courses .container .row .col-lg-4 .card-middle .rating .rating-top .rating-right span {
   font-size: 16px;
   font-weight: 400;
   color: #6d6e75;
 }
-main #find-courses .container .row .col-4 .card-middle .rating .card-name {
+main #find-courses .container .row .col-lg-4 .card-middle .rating .card-name {
   margin-top: 10px;
 }
-main #find-courses .container .row .col-4 .card-middle .rating .card-name h4 {
+main #find-courses .container .row .col-lg-4 .card-middle .rating .card-name h4 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
   cursor: pointer;
   transition: all 0.5s;
 }
-main #find-courses .container .row .col-4 .card-middle .rating .card-name h4:hover {
+main #find-courses .container .row .col-lg-4 .card-middle .rating .card-name h4:hover {
   color: #2b4eff;
 }
-main #find-courses .container .row .col-4 .card-middle .rating .card-name img {
+main #find-courses .container .row .col-lg-4 .card-middle .rating .card-name img {
   width: 35px;
   height: 35px;
   border: 2px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 10px 14px rgba(1, 11, 60, 0.1019607843);
 }
-main #find-courses .container .row .col-4 .card-middle .rating .card-name span {
+main #find-courses .container .row .col-lg-4 .card-middle .rating .card-name span {
   font-size: 16px;
   font-weight: 500;
   color: #53545b;
@@ -611,47 +616,47 @@ main #find-courses .container .row .col-4 .card-middle .rating .card-name span {
   cursor: pointer;
   transition: all 0.5s;
 }
-main #find-courses .container .row .col-4 .card-middle .rating .card-name span:hover {
+main #find-courses .container .row .col-lg-4 .card-middle .rating .card-name span:hover {
   color: #2b4eff;
 }
-main #find-courses .container .row .col-4 .card-middle .rating .card-name hr {
+main #find-courses .container .row .col-lg-4 .card-middle .rating .card-name hr {
   width: 117%;
   margin-left: -30px;
   border: 0.3px solid rgba(177, 177, 177, 0.597);
 }
-main #find-courses .container .row .col-4 .card-bottom {
+main #find-courses .container .row .col-lg-4 .card-bottom {
   display: flex;
   justify-content: space-between;
   padding: 0px 30px 10px;
 }
-main #find-courses .container .row .col-4 .card-bottom .prices {
+main #find-courses .container .row .col-lg-4 .card-bottom .prices {
   display: flex;
   align-items: center;
 }
-main #find-courses .container .row .col-4 .card-bottom .prices .first {
+main #find-courses .container .row .col-lg-4 .card-bottom .prices .first {
   font-size: 22px;
   color: #b128ff;
   font-weight: 700;
   padding-right: 5px;
 }
-main #find-courses .container .row .col-4 .card-bottom .prices .second {
+main #find-courses .container .row .col-lg-4 .card-bottom .prices .second {
   font-size: 15px;
   color: #6d6e75;
   text-decoration: line-through;
   font-weight: 700;
 }
-main #find-courses .container .row .col-4 .card-bottom .details {
+main #find-courses .container .row .col-lg-4 .card-bottom .details {
   display: flex;
   align-items: center;
   transition: all 0.5s;
 }
-main #find-courses .container .row .col-4 .card-bottom .details:hover {
+main #find-courses .container .row .col-lg-4 .card-bottom .details:hover {
   color: #2b4eff;
 }
-main #find-courses .container .row .col-4 .card-bottom .details:hover span {
+main #find-courses .container .row .col-lg-4 .card-bottom .details:hover span {
   color: #2b4eff;
 }
-main #find-courses .container .row .col-4 .card-bottom .details span {
+main #find-courses .container .row .col-lg-4 .card-bottom .details span {
   color: #0e1133;
   font-size: 16px;
   font-weight: 500;
@@ -660,37 +665,37 @@ main #find-courses .container .row .col-4 .card-bottom .details span {
   margin-right: 7px;
   transition: all 0.5s;
 }
-main #find-courses .container .row .col-4 .card-bottom .details i {
+main #find-courses .container .row .col-lg-4 .card-bottom .details i {
   font-size: 14px;
 }
-main #find-courses .container .row .col-4 .card2 .card-upper span {
+main #find-courses .container .row .col-lg-4 .card2 .card-upper span {
   background-color: #0fa0dd;
 }
-main #find-courses .container .row .col-4 .card2 .card-bottom .prices .first {
+main #find-courses .container .row .col-lg-4 .card2 .card-bottom .prices .first {
   color: #0fa0dd;
 }
-main #find-courses .container .row .col-4 .card3 .card-upper span {
+main #find-courses .container .row .col-lg-4 .card3 .card-upper span {
   background-color: #30a820;
 }
-main #find-courses .container .row .col-4 .card3 .card-bottom .prices .first {
+main #find-courses .container .row .col-lg-4 .card3 .card-bottom .prices .first {
   color: #30a820;
 }
-main #find-courses .container .row .col-4 .card4 .card-upper span {
+main #find-courses .container .row .col-lg-4 .card4 .card-upper span {
   background-color: #3b60ff;
 }
-main #find-courses .container .row .col-4 .card4 .card-bottom .prices .first {
+main #find-courses .container .row .col-lg-4 .card4 .card-bottom .prices .first {
   color: #3b60ff;
 }
-main #find-courses .container .row .col-4 .card5 .card-upper span {
+main #find-courses .container .row .col-lg-4 .card5 .card-upper span {
   background-color: #fa7919;
 }
-main #find-courses .container .row .col-4 .card5 .card-bottom .prices .first {
+main #find-courses .container .row .col-lg-4 .card5 .card-bottom .prices .first {
   color: #fa7919;
 }
-main #find-courses .container .row .col-4 .card6 .card-upper span {
+main #find-courses .container .row .col-lg-4 .card6 .card-upper span {
   background-color: #f2277e;
 }
-main #find-courses .container .row .col-4 .card6 .card-bottom .prices .first {
+main #find-courses .container .row .col-lg-4 .card6 .card-bottom .prices .first {
   color: #f2277e;
 }
 main #current-events {
@@ -731,10 +736,10 @@ main #current-events .container .row {
   background-position: center;
   margin-top: 40px;
 }
-main #current-events .container .row .col-10 {
+main #current-events .container .row .col-lg-10 {
   margin: 0 auto;
 }
-main #current-events .container .row .col-10 .event {
+main #current-events .container .row .col-lg-10 .event {
   padding: 28px 50px;
   border-radius: 6px;
   box-shadow: 0 30px 50px rgba(1, 11, 60, 0.1019607843);
@@ -744,7 +749,7 @@ main #current-events .container .row .col-10 .event {
   position: relative;
   overflow: hidden;
 }
-main #current-events .container .row .col-10 .event::before {
+main #current-events .container .row .col-lg-10 .event::before {
   content: "";
   position: absolute;
   top: 0;
@@ -755,51 +760,51 @@ main #current-events .container .row .col-10 .event::before {
   transition: height 0.3s ease-in-out;
   z-index: 1;
 }
-main #current-events .container .row .col-10 .event:hover::before {
+main #current-events .container .row .col-lg-10 .event:hover::before {
   height: 100%;
 }
-main #current-events .container .row .col-10 .event .event-left .dates {
+main #current-events .container .row .col-lg-10 .event .event-left .dates {
   display: flex;
   gap: 10px;
 }
-main #current-events .container .row .col-10 .event .event-left .dates span {
+main #current-events .container .row .col-lg-10 .event .event-left .dates span {
   padding-right: 10px;
   border-right: 1px solid #6d6e75;
   font-size: 16px;
   font-weight: 400;
   color: #6d6e75;
 }
-main #current-events .container .row .col-10 .event .event-left .event-name {
+main #current-events .container .row .col-lg-10 .event .event-left .event-name {
   margin-top: 10px;
 }
-main #current-events .container .row .col-10 .event .event-left .event-name h3 {
+main #current-events .container .row .col-lg-10 .event .event-left .event-name h3 {
   font-size: 24px;
   font-weight: 600;
   color: #0e1133;
   transition: all 0.5s;
   cursor: pointer;
 }
-main #current-events .container .row .col-10 .event .event-left .event-name h3:hover {
+main #current-events .container .row .col-lg-10 .event .event-left .event-name h3:hover {
   color: #2b4eff;
 }
-main #current-events .container .row .col-10 .event .event-right {
+main #current-events .container .row .col-lg-10 .event .event-right {
   display: flex;
   gap: 10px;
   align-items: center;
   cursor: pointer;
 }
-main #current-events .container .row .col-10 .event .event-right:hover h6,
-main #current-events .container .row .col-10 .event .event-right:hover i {
+main #current-events .container .row .col-lg-10 .event .event-right:hover h6,
+main #current-events .container .row .col-lg-10 .event .event-right:hover i {
   color: #2b4eff;
 }
-main #current-events .container .row .col-10 .event .event-right h6 {
+main #current-events .container .row .col-lg-10 .event .event-right h6 {
   margin: 0;
   color: #0e1133;
   font-size: 16px;
   font-weight: 500;
   transition: all 0.5s;
 }
-main #current-events .container .row .col-10 .event .event-right i {
+main #current-events .container .row .col-lg-10 .event .event-right i {
   color: #0e1133;
   font-size: 14px;
   transition: all 0.5s;
@@ -866,61 +871,61 @@ main #all-inclusive .container .pricing-cards .row {
   margin-top: 50px;
   gap: 30px;
 }
-main #all-inclusive .container .pricing-cards .row .col-5 {
+main #all-inclusive .container .pricing-cards .row .col-lg-5 {
   background: #f3f4f8;
   padding: 45px 50px 30px;
   border-radius: 6px;
 }
-main #all-inclusive .container .pricing-cards .row .col-5 .pricing-card-top {
+main #all-inclusive .container .pricing-cards .row .col-lg-5 .pricing-card-top {
   border-bottom: 1px solid rgba(211, 211, 211, 0.599);
   padding-bottom: 15px;
 }
-main #all-inclusive .container .pricing-cards .row .col-5 .pricing-card-top h4 {
+main #all-inclusive .container .pricing-cards .row .col-lg-5 .pricing-card-top h4 {
   font-size: 30px;
   color: #0e1133;
   font-weight: 700;
 }
-main #all-inclusive .container .pricing-cards .row .col-5 .pricing-card-top p {
+main #all-inclusive .container .pricing-cards .row .col-lg-5 .pricing-card-top p {
   color: #53545b;
   margin-bottom: 17px;
   font-size: 16px;
   font-weight: 400;
 }
-main #all-inclusive .container .pricing-cards .row .col-5 .pricing-card-top h2 {
+main #all-inclusive .container .pricing-cards .row .col-lg-5 .pricing-card-top h2 {
   font-size: 50px;
   color: #0e1133;
   font-weight: 700;
 }
-main #all-inclusive .container .pricing-cards .row .col-5 .pricing-card-top h2 span {
+main #all-inclusive .container .pricing-cards .row .col-lg-5 .pricing-card-top h2 span {
   margin-left: -10px;
   font-size: 16px;
   font-weight: 400;
   color: #0e1133;
 }
-main #all-inclusive .container .pricing-cards .row .col-5 .pricing-card-bottom ul {
+main #all-inclusive .container .pricing-cards .row .col-lg-5 .pricing-card-bottom ul {
   padding-left: 0px;
   margin-top: 25px;
   list-style: none;
 }
-main #all-inclusive .container .pricing-cards .row .col-5 .pricing-card-bottom ul li {
+main #all-inclusive .container .pricing-cards .row .col-lg-5 .pricing-card-bottom ul li {
   font-size: 17px;
   font-weight: 500;
   padding-top: 7px;
   transition: all 0.5s;
   cursor: pointer;
 }
-main #all-inclusive .container .pricing-cards .row .col-5 .pricing-card-bottom ul li:hover {
+main #all-inclusive .container .pricing-cards .row .col-lg-5 .pricing-card-bottom ul li:hover {
   color: #30a820;
 }
-main #all-inclusive .container .pricing-cards .row .col-5 .pricing-card-bottom ul li:hover i {
+main #all-inclusive .container .pricing-cards .row .col-lg-5 .pricing-card-bottom ul li:hover i {
   color: #30a820;
 }
-main #all-inclusive .container .pricing-cards .row .col-5 .pricing-card-bottom ul li i {
+main #all-inclusive .container .pricing-cards .row .col-lg-5 .pricing-card-bottom ul li i {
   margin-right: 10px;
   color: #6cd85e;
   transition: all 0.5s;
 }
-main #all-inclusive .container .pricing-cards .row .col-5 .pricing-card-bottom button {
+main #all-inclusive .container .pricing-cards .row .col-lg-5 .pricing-card-bottom button {
   background-color: #2b4eff;
   margin-top: 20px;
   padding: 10px 20px;
@@ -929,7 +934,7 @@ main #all-inclusive .container .pricing-cards .row .col-5 .pricing-card-bottom b
   font-size: 15px;
   transition: all 0.5s;
 }
-main #all-inclusive .container .pricing-cards .row .col-5 .pricing-card-bottom button:hover {
+main #all-inclusive .container .pricing-cards .row .col-lg-5 .pricing-card-bottom button:hover {
   box-shadow: 0 10px 24px rgba(4, 23, 118, 0.3019607843);
 }
 main #all-inclusive .container .pricing-cards .row .pricing-card2 .btn-outline-light {
@@ -986,6 +991,15 @@ footer #adv-box .adv-div .adv-left button {
   left: 80%;
   top: 42%;
   color: #0e1133;
+  height: 54px;
+  background: #ffffff;
+  padding: 0 45px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+footer #adv-box .adv-div .adv-left button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 footer #footer-main {
   padding-bottom: 50px;
@@ -1179,6 +1193,150 @@ footer #footer-bottom p a {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 767px) {
+  main #intro .col-12 {
+    margin: 0px !important;
+  }
+  main #intro .col-12 span {
+    font-size: 25px !important;
+  }
+  main #intro .col-12 h1 {
+    font-size: 30px !important;
+  }
+  main #intro .col-12 p {
+    font-size: 16px !important;
+  }
+  main #intro .col-12 .yellow-line {
+    top: 6% !important;
+    width: 25% !important;
+    left: 0% !important;
+  }
+  main #intro .col-lg-4 img {
+    top: 40% !important;
+  }
+  main #intro .col-2 img {
+    display: none;
+  }
+  main #intro .col-2 .jumping-text {
+    top: 90% !important;
+  }
+  main #explore .explore-headings {
+    flex-direction: column;
+  }
+  main #explore .explore-headings .explore-headings-left h2 {
+    font-size: 25px !important;
+  }
+  main #explore .explore-headings .explore-headings-left img {
+    top: 99% !important;
+    width: 23% !important;
+    left: 13% !important;
+  }
+  main #explore .explore-headings .explore-headings-right {
+    margin: 7px !important;
+    justify-content: left !important;
+  }
+  main #explore .explore-headings .explore-headings-right i {
+    font-size: 13px !important;
+  }
+  main #explore .explore-options .col-12 {
+    margin-top: 0px !important;
+  }
+  main #under-explore .col-12 {
+    padding-bottom: 0 !important;
+  }
+  main #under-explore .col-12 .recommendation-card-right img {
+    display: none;
+  }
+  main #find-courses .headings {
+    width: 70% !important;
+    margin-left: 10px !important;
+  }
+  main #find-courses .headings h2 {
+    font-size: 26px !important;
+  }
+  main #find-courses .headings img {
+    top: 308.5% !important;
+    width: 26% !important;
+    left: 20% !important;
+  }
+  main #find-courses .tab-headings {
+    width: 100% !important;
+    padding: 0px 5px !important;
+  }
+  main #find-courses .tab-headings ul li {
+    font-size: 15px !important;
+  }
+  main #find-courses .row .col-12 {
+    margin: 0px !important;
+    margin-left: 20px !important;
+  }
+  main #current-events .heading {
+    width: 100% !important;
+    margin: 0px !important;
+    justify-content: center !important;
+  }
+  main #current-events .heading h2 {
+    width: 100%;
+    font-size: 27px !important;
+  }
+  main #current-events .heading img {
+    top: 650% !important;
+    width: 24% !important;
+  }
+  main #current-events .row .col-12 .event {
+    flex-direction: column;
+  }
+  main #current-events .row .col-12 .event .event-left .dates {
+    width: 100% !important;
+    gap: 0px !important;
+  }
+  main #current-events .row .col-12 .event .event-left .dates span {
+    padding-right: 3px !important;
+    margin-left: 5px !important;
+    font-size: 14px !important;
+  }
+  main #all-inclusive .heading {
+    width: 70% !important;
+    justify-content: center !important;
+  }
+  main #all-inclusive .heading h2 {
+    font-size: 26px !important;
+  }
+  main #all-inclusive .heading img {
+    top: 760% !important;
+    left: 57% !important;
+    width: 23% !important;
+  }
+  main #all-inclusive .pricing-cards .row {
+    margin: 0px !important;
+    margin-left: 5px !important;
+    margin-top: 30px !important;
+  }
+  footer #adv-box .adv-div {
+    flex-direction: column;
+    width: 90% !important;
+    left: 5% !important;
+    bottom: 92% !important;
+    padding: 20px 30px 50px !important;
+  }
+  footer #adv-box .adv-div .adv-right h1 {
+    font-size: 26px !important;
+  }
+  footer #adv-box .adv-div .adv-left img {
+    display: none;
+  }
+  footer #adv-box .adv-div .adv-left button {
+    left: 7% !important;
+    top: 77% !important;
+  }
+  footer #footer-main .container-custom {
+    margin: 0px 30px !important;
+  }
+  footer #footer-main .container-custom .col-12 {
+    margin-left: 5px !important;
+    margin-top: 20px !important;
+  }
+}
 @keyframes rotation {
   from {
     transform: rotate(0deg);

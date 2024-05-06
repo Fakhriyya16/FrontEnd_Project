@@ -173,3 +173,4 @@ annualBtn.addEventListener("click",function(){
     monthlyBtn.classList.remove("btn-primary");
     monthlyBtn.classList.add("btn-light")
 })
+

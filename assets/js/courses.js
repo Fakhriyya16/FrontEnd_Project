@@ -163,3 +163,17 @@ pages.forEach(page => {
     })
 });
 
+let sidebarIcon = document.querySelector(".fa-bars");
+let sidebar = document.querySelector(".side-bar");
+let closeIcon = document.querySelector(".btn-close");
+
+sidebarIcon.addEventListener("click",function(){
+    sidebar.classList.remove("d-none");
+    this.classList.add("d-none");
+})
+
+closeIcon.addEventListener("click",function(){
+    sidebar.classList.add("d-none");
+    sidebarIcon.classList.remove("d-none");
+})
+

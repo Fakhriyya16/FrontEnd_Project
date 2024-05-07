@@ -68,13 +68,17 @@ header {
                 }
 
                 li {
-
                     display: flex;
                     transition: all 0.5s;
                 }
 
                 .dropdown-toggle::after {
                     display: none;
+                }
+            }
+            .course{
+                i{
+                    margin-left: 5px;
                 }
             }
 
@@ -250,6 +254,35 @@ header {
                 }
             }
 
+            .fa-bars {
+                display: none;
+            }
+
+        }
+    }
+
+    .side-bar {
+        position: absolute;
+        right: 0;
+        z-index: 100;
+        height: 100vh;
+        width: 30%;
+        background-color: #fff;
+        transition: all 0.5s;
+
+        button {}
+
+        ul {
+            list-style: none;
+
+            li {
+                margin-top: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: #121317;
+                }
+            }
         }
     }
 
@@ -573,9 +606,9 @@ main {
                             border-radius: 4px;
                             font-weight: 500;
                             cursor: pointer;
-
+                            transition: all 0.5s;
                             &:hover {
-                                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+                                box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
                             }
                         }
                     }
@@ -666,6 +699,13 @@ main {
                     .course-card {
                         border-radius: 6px;
                         background: #ffffff;
+                        &:hover {
+                            .card-upper{
+                                img{
+                                    transform: scale(1.1, 1.1);
+                                }
+                            }
+                        }
 
                         .card-upper {
                             overflow: hidden;
@@ -695,9 +735,7 @@ main {
                                 border-top-left-radius: 6px;
                                 border-top-right-radius: 6px;
 
-                                &:hover {
-                                    transform: scale(1.1, 1.1);
-                                }
+
                             }
                         }
                     }
@@ -1232,6 +1270,34 @@ main {
                     }
                 }
             }
+
+            .pricing-card2 {
+                .best-value {
+                    span {
+                        height: 30px;
+                        font-size: 14px;
+                        text-align: center;
+                        color: #fff;
+                        background: #f2277e;
+                        padding: 5px 10px;
+                        border-radius: 4px 4px 0;
+                        position: absolute;
+                        margin-left: 356px;
+                        margin-top: -421px;
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            bottom: -10px;
+                            right: 0;
+                            width: 0;
+                            height: 0;
+                            border-left: 15px solid #960443;
+                            border-top: 0px solid transparent;
+                            border-bottom: 10px solid transparent;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -1285,7 +1351,8 @@ footer {
                     border-radius: 4px;
                     font-weight: 500;
                     transition: all 0.5s;
-                    &:hover{
+
+                    &:hover {
                         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
                     }
                 }
@@ -1528,8 +1595,41 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
+    header {
+        .navbar {
+            .container {
+                .collapse {
+                    display: none;
+                }
+
+                .fa-bars {
+                    display: unset;
+                    color: #2b4eff;
+                    margin-right: 20px !important;
+                    font-size: 26px !important;
+                }
+            }
+
+        }
+    }
+
     main {
         #intro {
+            .intro-background {
+                img:nth-child(2) {
+                    left: 22% !important;
+                }
+
+                .bluecircle {
+                    left: 54% !important;
+                    top: 256px !important;
+                }
+
+                img:nth-child(6) {
+                    display: none;
+                }
+            }
+
             .col-12 {
                 margin: 0px !important;
 
@@ -1724,7 +1824,7 @@ footer {
                 width: 90% !important;
                 left: 5% !important;
                 bottom: 92% !important;
-                padding: 20px 30px 50px !important;
+                padding: 20px 30px 80px !important;
 
                 .adv-right {
                     h1 {
@@ -1739,7 +1839,7 @@ footer {
 
                     button {
                         left: 7% !important;
-                        top: 77% !important;
+                        top: 70% !important;
                     }
                 }
             }

@@ -565,9 +565,9 @@ main {
         padding-bottom: 200px;
         .container {
             .row {
-                .col-8 {
+                .col-lg-8 {
                     .row {
-                        .col-6 {
+                        .col-lg-6 {
                             .blog-card {
                                 box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
                                 width: 370px;
@@ -762,7 +762,7 @@ main {
                     }
                 }
 
-                .col-4 {
+                .col-lg-4 {
                     .srch-input {
                         input {
                             width: 75%;
@@ -1214,6 +1214,48 @@ footer {
             a {
                 color: #fff;
                 text-decoration: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    footer {
+        #adv-box {
+            .adv-div {
+                flex-direction: column;
+                width: 90% !important;
+                left: 5% !important;
+                bottom: 92% !important;
+                padding: 20px 30px 80px !important;
+                
+                .adv-right {
+                    h1 {
+                        font-size: 26px !important;
+                    }
+                }
+
+                .adv-left {
+                    img {
+                        display: none;
+                    }
+
+                    button {
+                        left: 7% !important;
+                        top: 70% !important;
+                    }
+                }
+            }
+        }
+
+        #footer-main {
+            .container-custom {
+                margin: 0px 30px !important;
+
+                .col-12 {
+                    margin-left: 5px !important;
+                    margin-top: 20px !important;
+                }
             }
         }
     }

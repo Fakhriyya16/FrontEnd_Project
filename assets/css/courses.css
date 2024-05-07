@@ -79,6 +79,9 @@ header .first-nav .container .dropdown-items li {
 header .first-nav .container .dropdown-items .dropdown-toggle::after {
   display: none;
 }
+header .first-nav .container .contact-li {
+  margin-right: 16px;
+}
 header .first-nav .container .contact-li a {
   color: white !important;
 }
@@ -1109,6 +1112,47 @@ footer #footer-bottom p a {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 767px) {
+  main #find-courses .page-navigation {
+    display: block !important;
+  }
+  main #find-courses .page-navigation .pn-right {
+    margin-top: 10px !important;
+  }
+  main #find-courses .long .col-12 .long-card {
+    display: block !important;
+  }
+  main #find-courses .long .col-12 .long-card .description-part .long-card-bottom {
+    justify-content: center !important;
+  }
+  main #find-courses .long .col-12 .long-card .description-part .long-card-bottom .details {
+    margin-left: 48px !important;
+  }
+  footer #adv-box .adv-div {
+    flex-direction: column;
+    width: 90% !important;
+    left: 5% !important;
+    bottom: 92% !important;
+    padding: 20px 30px 80px !important;
+  }
+  footer #adv-box .adv-div .adv-right h1 {
+    font-size: 26px !important;
+  }
+  footer #adv-box .adv-div .adv-left img {
+    display: none;
+  }
+  footer #adv-box .adv-div .adv-left button {
+    left: 7% !important;
+    top: 70% !important;
+  }
+  footer #footer-main .container-custom {
+    margin: 0px 30px !important;
+  }
+  footer #footer-main .container-custom .col-12 {
+    margin-left: 5px !important;
+    margin-top: 20px !important;
+  }
+}
 @keyframes rotation {
   from {
     transform: rotate(0deg);

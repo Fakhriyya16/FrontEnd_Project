@@ -457,28 +457,28 @@ main #body-part {
   margin-top: 600px;
   padding-bottom: 200px;
 }
-main #body-part .container .row .col-8 .row .col-6 .blog-card {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .blog-card {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   width: 370px;
   border-radius: 5px;
 }
-main #body-part .container .row .col-8 .row .col-6 .blog-card .card-top {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .blog-card .card-top {
   overflow: hidden;
 }
-main #body-part .container .row .col-8 .row .col-6 .blog-card .card-top img {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .blog-card .card-top img {
   width: 100%;
   transition: all 0.5s;
   cursor: pointer;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-main #body-part .container .row .col-8 .row .col-6 .blog-card .card-top img:hover {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .blog-card .card-top img:hover {
   transform: scale(1.1, 1.1);
 }
-main #body-part .container .row .col-8 .row .col-6 .blog-card .card-middle {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .blog-card .card-middle {
   padding: 20px 20px 10px;
 }
-main #body-part .container .row .col-8 .row .col-6 .blog-card .card-middle span {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .blog-card .card-middle span {
   background: rgba(48, 168, 32, 0.1);
   color: #30a820;
   transition: all 0.5s;
@@ -488,11 +488,11 @@ main #body-part .container .row .col-8 .row .col-6 .blog-card .card-middle span 
   padding: 2px 6px;
   cursor: pointer;
 }
-main #body-part .container .row .col-8 .row .col-6 .blog-card .card-middle span:hover {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .blog-card .card-middle span:hover {
   background: #30a820;
   color: #fff;
 }
-main #body-part .container .row .col-8 .row .col-6 .blog-card .card-middle h3 {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .blog-card .card-middle h3 {
   margin-top: 10px;
   font-size: 20px;
   margin-bottom: 35px;
@@ -501,23 +501,23 @@ main #body-part .container .row .col-8 .row .col-6 .blog-card .card-middle h3 {
   transition: all 0.3s ease-out 0s;
   cursor: pointer;
 }
-main #body-part .container .row .col-8 .row .col-6 .blog-card .card-middle h3:hover {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .blog-card .card-middle h3:hover {
   color: #2b4eff;
 }
-main #body-part .container .row .col-8 .row .col-6 .blog-card .card-bottom {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .blog-card .card-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px 20px;
 }
-main #body-part .container .row .col-8 .row .col-6 .blog-card .card-bottom .bottom-left img {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .blog-card .card-bottom .bottom-left img {
   width: 35px;
   height: 35px;
   border: 2px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 10px 14px rgba(1, 11, 60, 0.1019607843);
 }
-main #body-part .container .row .col-8 .row .col-6 .blog-card .card-bottom .bottom-left span {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .blog-card .card-bottom .bottom-left span {
   font-size: 16px;
   font-weight: 500;
   color: #53545b;
@@ -525,74 +525,74 @@ main #body-part .container .row .col-8 .row .col-6 .blog-card .card-bottom .bott
   cursor: pointer;
   transition: all 0.5s;
 }
-main #body-part .container .row .col-8 .row .col-6 .blog-card .card-bottom .bottom-left span:hover {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .blog-card .card-bottom .bottom-left span:hover {
   color: #2b4eff;
 }
-main #body-part .container .row .col-8 .row .col-6 .blog-card .card-bottom .bottom-right i {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .blog-card .card-bottom .bottom-right i {
   font-size: 14px;
   color: #53545b;
 }
-main #body-part .container .row .col-8 .row .col-6 .blog-card .card-bottom .bottom-right span {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .blog-card .card-bottom .bottom-right span {
   font-size: 14px;
   color: #53545b;
   font-weight: 500;
 }
-main #body-part .container .row .col-8 .row .col-6 .card-2 .card-middle span {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .card-2 .card-middle span {
   color: #0fa0dd;
   background: rgba(15, 160, 221, 0.1);
 }
-main #body-part .container .row .col-8 .row .col-6 .card-2 .card-middle span:hover {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .card-2 .card-middle span:hover {
   color: white;
   background: #0fa0dd;
 }
-main #body-part .container .row .col-8 .row .col-6 .card-3 .card-middle span {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .card-3 .card-middle span {
   background: rgba(48, 168, 32, 0.1);
   color: #30a820;
 }
-main #body-part .container .row .col-8 .row .col-6 .card-3 .card-middle span:hover {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .card-3 .card-middle span:hover {
   color: white;
   background: #30a820;
 }
-main #body-part .container .row .col-8 .row .col-6 .card-4 .card-middle span {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .card-4 .card-middle span {
   background: rgba(43, 78, 255, 0.1);
   color: #2b4eff;
 }
-main #body-part .container .row .col-8 .row .col-6 .card-4 .card-middle span:hover {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .card-4 .card-middle span:hover {
   color: white;
   background: #2b4eff;
 }
-main #body-part .container .row .col-8 .row .col-6 .card-5 .card-middle span {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .card-5 .card-middle span {
   background: rgba(250, 121, 25, 0.1);
   color: #fa7919;
 }
-main #body-part .container .row .col-8 .row .col-6 .card-5 .card-middle span:hover {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .card-5 .card-middle span:hover {
   color: white;
   background: #fa7919;
 }
-main #body-part .container .row .col-8 .row .col-6 .card-6 .card-middle span {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .card-6 .card-middle span {
   background: rgba(242, 39, 126, 0.1);
   color: #f2277e;
 }
-main #body-part .container .row .col-8 .row .col-6 .card-6 .card-middle span:hover {
+main #body-part .container .row .col-lg-8 .row .col-lg-6 .card-6 .card-middle span:hover {
   color: white;
   background: #f2277e;
 }
-main #body-part .container .row .col-8 .pagination nav {
+main #body-part .container .row .col-lg-8 .pagination nav {
   margin-top: 30px;
 }
-main #body-part .container .row .col-8 .pagination nav ul {
+main #body-part .container .row .col-lg-8 .pagination nav ul {
   cursor: pointer;
 }
-main #body-part .container .row .col-8 .pagination nav ul li {
+main #body-part .container .row .col-lg-8 .pagination nav ul li {
   color: #0e1133;
 }
-main #body-part .container .row .col-8 .pagination nav ul span {
+main #body-part .container .row .col-lg-8 .pagination nav ul span {
   color: #0e1133;
 }
-main #body-part .container .row .col-8 .pagination nav .active {
+main #body-part .container .row .col-lg-8 .pagination nav .active {
   color: white;
 }
-main #body-part .container .row .col-4 .srch-input input {
+main #body-part .container .row .col-lg-4 .srch-input input {
   width: 75%;
   height: 60px;
   line-height: 56px;
@@ -603,58 +603,58 @@ main #body-part .container .row .col-4 .srch-input input {
   padding-right: 45px;
   position: relative;
 }
-main #body-part .container .row .col-4 .srch-input input:focus {
+main #body-part .container .row .col-lg-4 .srch-input input:focus {
   outline: 1.7px solid #2b4eff;
 }
-main #body-part .container .row .col-4 .srch-input ::-moz-placeholder {
+main #body-part .container .row .col-lg-4 .srch-input ::-moz-placeholder {
   font-size: 13px;
   font-weight: 500;
 }
-main #body-part .container .row .col-4 .srch-input ::placeholder {
+main #body-part .container .row .col-lg-4 .srch-input ::placeholder {
   font-size: 13px;
   font-weight: 500;
 }
-main #body-part .container .row .col-4 .srch-input i {
+main #body-part .container .row .col-lg-4 .srch-input i {
   position: absolute;
   margin-top: 17px;
   margin-left: -40px;
   font-size: 18px;
   cursor: pointer;
 }
-main #body-part .container .row .col-4 .recent-posts {
+main #body-part .container .row .col-lg-4 .recent-posts {
   margin-top: 50px;
 }
-main #body-part .container .row .col-4 .recent-posts h3 {
+main #body-part .container .row .col-lg-4 .recent-posts h3 {
   font-size: 20px;
   padding-bottom: 7px;
   color: #0e1133;
   font-weight: 700;
 }
-main #body-part .container .row .col-4 .recent-posts hr {
+main #body-part .container .row .col-lg-4 .recent-posts hr {
   width: 75%;
   margin-top: -3px;
   border: 1px solid #b7b7b7;
 }
-main #body-part .container .row .col-4 .recent-posts .post-card {
+main #body-part .container .row .col-lg-4 .recent-posts .post-card {
   height: 75px;
   display: flex;
 }
-main #body-part .container .row .col-4 .recent-posts .post-card .left-card img {
+main #body-part .container .row .col-lg-4 .recent-posts .post-card .left-card img {
   width: 75px;
   height: 75px;
   cursor: pointer;
 }
-main #body-part .container .row .col-4 .recent-posts .post-card .right-card {
+main #body-part .container .row .col-lg-4 .recent-posts .post-card .right-card {
   margin-left: 20px;
   width: 60%;
 }
-main #body-part .container .row .col-4 .recent-posts .post-card .right-card span {
+main #body-part .container .row .col-lg-4 .recent-posts .post-card .right-card span {
   color: #53545b;
   font-weight: 500;
   font-size: 15px;
   display: inline-block;
 }
-main #body-part .container .row .col-4 .recent-posts .post-card .right-card h4 {
+main #body-part .container .row .col-lg-4 .recent-posts .post-card .right-card h4 {
   font-size: 18px;
   color: #0e1133;
   font-weight: 600;
@@ -662,27 +662,27 @@ main #body-part .container .row .col-4 .recent-posts .post-card .right-card h4 {
   transition: all 0.5s;
   cursor: pointer;
 }
-main #body-part .container .row .col-4 .recent-posts .post-card .right-card h4:hover {
+main #body-part .container .row .col-lg-4 .recent-posts .post-card .right-card h4:hover {
   color: #2b4eff;
 }
-main #body-part .container .row .col-4 .categories {
+main #body-part .container .row .col-lg-4 .categories {
   margin-top: 70px;
 }
-main #body-part .container .row .col-4 .categories h3 {
+main #body-part .container .row .col-lg-4 .categories h3 {
   font-size: 20px;
   padding-bottom: 7px;
   color: #0e1133;
   font-weight: 700;
 }
-main #body-part .container .row .col-4 .categories hr {
+main #body-part .container .row .col-lg-4 .categories hr {
   width: 75%;
   margin-top: -3px;
   border: 1px solid #b7b7b7;
 }
-main #body-part .container .row .col-4 .categories ul {
+main #body-part .container .row .col-lg-4 .categories ul {
   margin-top: 30px;
 }
-main #body-part .container .row .col-4 .categories ul li {
+main #body-part .container .row .col-lg-4 .categories ul li {
   font-size: 16px;
   font-weight: 500;
   color: #53545b;
@@ -691,27 +691,27 @@ main #body-part .container .row .col-4 .categories ul li {
   transition: all 0.5s;
   cursor: pointer;
 }
-main #body-part .container .row .col-4 .categories ul li:hover {
+main #body-part .container .row .col-lg-4 .categories ul li:hover {
   color: #2b4eff;
 }
-main #body-part .container .row .col-4 .tags {
+main #body-part .container .row .col-lg-4 .tags {
   margin-top: 50px;
 }
-main #body-part .container .row .col-4 .tags h3 {
+main #body-part .container .row .col-lg-4 .tags h3 {
   font-size: 20px;
   padding-bottom: 7px;
   color: #0e1133;
   font-weight: 700;
 }
-main #body-part .container .row .col-4 .tags hr {
+main #body-part .container .row .col-lg-4 .tags hr {
   margin-top: -3px;
   width: 75%;
   border: 1px solid #b7b7b7;
 }
-main #body-part .container .row .col-4 .tags .buttons {
+main #body-part .container .row .col-lg-4 .tags .buttons {
   width: 75%;
 }
-main #body-part .container .row .col-4 .tags .buttons button {
+main #body-part .container .row .col-lg-4 .tags .buttons button {
   height: 36px;
   padding: 0 15px;
   font-size: 15px;
@@ -724,11 +724,11 @@ main #body-part .container .row .col-4 .tags .buttons button {
   border: none;
   transition: all 0.5s;
 }
-main #body-part .container .row .col-4 .tags .buttons button:hover {
+main #body-part .container .row .col-lg-4 .tags .buttons button:hover {
   background-color: #2b4eff;
   color: white;
 }
-main #body-part .container .row .col-4 .last-image {
+main #body-part .container .row .col-lg-4 .last-image {
   margin-top: 50px;
 }
 
@@ -971,6 +971,32 @@ footer #footer-bottom p a {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 767px) {
+  footer #adv-box .adv-div {
+    flex-direction: column;
+    width: 90% !important;
+    left: 5% !important;
+    bottom: 92% !important;
+    padding: 20px 30px 80px !important;
+  }
+  footer #adv-box .adv-div .adv-right h1 {
+    font-size: 26px !important;
+  }
+  footer #adv-box .adv-div .adv-left img {
+    display: none;
+  }
+  footer #adv-box .adv-div .adv-left button {
+    left: 7% !important;
+    top: 70% !important;
+  }
+  footer #footer-main .container-custom {
+    margin: 0px 30px !important;
+  }
+  footer #footer-main .container-custom .col-12 {
+    margin-left: 5px !important;
+    margin-top: 20px !important;
+  }
+}
 @keyframes rotation {
   from {
     transform: rotate(0deg);

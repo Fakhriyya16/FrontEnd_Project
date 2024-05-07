@@ -63,6 +63,9 @@ header nav .container .dropdown-items li {
 header nav .container .dropdown-items .dropdown-toggle::after {
   display: none;
 }
+header nav .container .course i {
+  margin-left: 5px;
+}
 header nav .container .contact-li a:hover {
   color: #2b4eff;
 }
@@ -203,6 +206,28 @@ header nav .container .search-input button {
 }
 header nav .container .search-input button:hover {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+header nav .container .fa-bars {
+  display: none;
+}
+header .side-bar {
+  position: absolute;
+  right: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 30%;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+header .side-bar ul {
+  list-style: none;
+}
+header .side-bar ul li {
+  margin-top: 20px;
+}
+header .side-bar ul li a {
+  text-decoration: none;
+  color: #121317;
 }
 header .fixed-top {
   background-color: #ffffff;
@@ -462,9 +487,10 @@ main #under-explore .row .col-lg-6 .recommendation-card .recommendation-card-lef
   border-radius: 4px;
   font-weight: 500;
   cursor: pointer;
+  transition: all 0.5s;
 }
 main #under-explore .row .col-lg-6 .recommendation-card .recommendation-card-left button:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 main #under-explore .row .col-lg-6 .recommendation-card .recommendation-card-right img {
   position: absolute;
@@ -533,6 +559,9 @@ main #find-courses .container .row .col-lg-4 .course-card {
   border-radius: 6px;
   background: #ffffff;
 }
+main #find-courses .container .row .col-lg-4 .course-card:hover .card-upper img {
+  transform: scale(1.1, 1.1);
+}
 main #find-courses .container .row .col-lg-4 .course-card .card-upper {
   overflow: hidden;
   position: relative;
@@ -559,9 +588,6 @@ main #find-courses .container .row .col-lg-4 .course-card .card-upper img {
   z-index: 0;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-}
-main #find-courses .container .row .col-lg-4 .course-card .card-upper img:hover {
-  transform: scale(1.1, 1.1);
 }
 main #find-courses .container .row .col-lg-4 .card-middle {
   padding: 25px 30px 0px;
@@ -953,6 +979,29 @@ main #all-inclusive .container .pricing-cards .row .pricing-card2 .btn-outline-l
   border: 0;
   background-color: #2b4eff !important;
 }
+main #all-inclusive .container .pricing-card2 .best-value span {
+  height: 30px;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  background: #f2277e;
+  padding: 5px 10px;
+  border-radius: 4px 4px 0;
+  position: absolute;
+  margin-left: 356px;
+  margin-top: -421px;
+}
+main #all-inclusive .container .pricing-card2 .best-value span::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 15px solid #960443;
+  border-top: 0px solid transparent;
+  border-bottom: 10px solid transparent;
+}
 
 footer {
   background-color: #141130;
@@ -1194,6 +1243,25 @@ footer #footer-bottom p a {
 }
 
 @media only screen and (max-width: 767px) {
+  header .navbar .container .collapse {
+    display: none;
+  }
+  header .navbar .container .fa-bars {
+    display: unset;
+    color: #2b4eff;
+    margin-right: 20px !important;
+    font-size: 26px !important;
+  }
+  main #intro .intro-background img:nth-child(2) {
+    left: 22% !important;
+  }
+  main #intro .intro-background .bluecircle {
+    left: 54% !important;
+    top: 256px !important;
+  }
+  main #intro .intro-background img:nth-child(6) {
+    display: none;
+  }
   main #intro .col-12 {
     margin: 0px !important;
   }
@@ -1317,7 +1385,7 @@ footer #footer-bottom p a {
     width: 90% !important;
     left: 5% !important;
     bottom: 92% !important;
-    padding: 20px 30px 50px !important;
+    padding: 20px 30px 80px !important;
   }
   footer #adv-box .adv-div .adv-right h1 {
     font-size: 26px !important;
@@ -1327,7 +1395,7 @@ footer #footer-bottom p a {
   }
   footer #adv-box .adv-div .adv-left button {
     left: 7% !important;
-    top: 77% !important;
+    top: 70% !important;
   }
   footer #footer-main .container-custom {
     margin: 0px 30px !important;

@@ -457,14 +457,14 @@ main #body-part {
   margin-top: 600px;
   padding-bottom: 100px;
 }
-main #body-part .container .row .col-8 .heading h2 {
+main #body-part .container .row .col-lg-8 .heading h2 {
   font-size: 40px;
   color: #0e1133;
   font-weight: 700;
   position: relative;
   z-index: 1;
 }
-main #body-part .container .row .col-8 .heading img {
+main #body-part .container .row .col-lg-8 .heading img {
   width: 10%;
   position: absolute;
   z-index: 0;
@@ -472,15 +472,15 @@ main #body-part .container .row .col-8 .heading img {
   margin-left: 110px;
   animation: animation-yellow 3s infinite;
 }
-main #body-part .container .row .col-8 .heading p {
+main #body-part .container .row .col-lg-8 .heading p {
   font-size: 16px;
   color: #53545b;
   font-weight: 400;
 }
-main #body-part .container .row .col-8 .name-email {
+main #body-part .container .row .col-lg-8 .name-email {
   margin-top: 40px;
 }
-main #body-part .container .row .col-8 .name-email .col-5 input {
+main #body-part .container .row .col-lg-8 .name-email .col-5 input {
   width: 100%;
   height: 56px;
   line-height: 54px;
@@ -491,10 +491,10 @@ main #body-part .container .row .col-8 .name-email .col-5 input {
   color: #0e1133;
   font-size: 15px;
 }
-main #body-part .container .row .col-8 .name-email .col-5 input:focus {
+main #body-part .container .row .col-lg-8 .name-email .col-5 input:focus {
   outline: 1.6px solid #2b4eff;
 }
-main #body-part .container .row .col-8 .subject .col-12 input {
+main #body-part .container .row .col-lg-8 .subject .col-12 input {
   margin-top: 20px;
   width: 83%;
   height: 56px;
@@ -507,10 +507,10 @@ main #body-part .container .row .col-8 .subject .col-12 input {
   font-size: 15px;
   margin-bottom: 20px;
 }
-main #body-part .container .row .col-8 .subject .col-12 input:focus {
+main #body-part .container .row .col-lg-8 .subject .col-12 input:focus {
   outline: 1.6px solid #2b4eff;
 }
-main #body-part .container .row .col-8 .your-message .col-12 input {
+main #body-part .container .row .col-lg-8 .your-message .col-12 input {
   height: 180px;
   padding: 0px 25px 110px;
   width: 83%;
@@ -520,7 +520,7 @@ main #body-part .container .row .col-8 .your-message .col-12 input {
   color: #0e1133;
   font-size: 15px;
 }
-main #body-part .container .row .col-8 .terms input {
+main #body-part .container .row .col-lg-8 .terms input {
   margin-top: 20px;
   cursor: pointer;
   width: 14px;
@@ -529,24 +529,24 @@ main #body-part .container .row .col-8 .terms input {
   outline: none;
   border-radius: 4px;
 }
-main #body-part .container .row .col-8 .terms label {
+main #body-part .container .row .col-lg-8 .terms label {
   cursor: pointer;
   padding-left: 10px;
   color: #53545b;
 }
-main #body-part .container .row .col-8 .terms label span {
+main #body-part .container .row .col-lg-8 .terms label span {
   color: #0e1133;
   font-size: 15px;
   font-weight: 600;
   transition: all 0.5s;
 }
-main #body-part .container .row .col-8 .terms label span:hover {
+main #body-part .container .row .col-lg-8 .terms label span:hover {
   color: #2b4eff;
 }
-main #body-part .container .row .col-8 .send-message-button {
+main #body-part .container .row .col-lg-8 .send-message-button {
   margin-top: 20px;
 }
-main #body-part .container .row .col-8 .send-message-button button {
+main #body-part .container .row .col-lg-8 .send-message-button button {
   height: 50px;
   text-align: center;
   padding: 0 25px;
@@ -556,69 +556,69 @@ main #body-part .container .row .col-8 .send-message-button button {
   font-weight: 500;
   transition: all 0.5s;
 }
-main #body-part .container .row .col-8 .send-message-button button:hover {
+main #body-part .container .row .col-lg-8 .send-message-button button:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-main #body-part .container .row .col-4 {
+main #body-part .container .row .col-lg-4 {
   position: relative;
 }
-main #body-part .container .row .col-4 .background-images .pink-dots {
+main #body-part .container .row .col-lg-4 .background-images .pink-dots {
   position: absolute;
   top: 5%;
   left: 88%;
   z-index: -10;
 }
-main #body-part .container .row .col-4 .background-images .blue-circle {
+main #body-part .container .row .col-lg-4 .background-images .blue-circle {
   position: absolute;
   top: 45%;
   left: 100%;
   z-index: -10;
 }
-main #body-part .container .row .col-4 .background-images .blue-sprinkles {
+main #body-part .container .row .col-lg-4 .background-images .blue-sprinkles {
   position: absolute;
   top: 63%;
   left: -20px;
   z-index: -10;
 }
-main #body-part .container .row .col-4 .contact-card {
+main #body-part .container .row .col-lg-4 .contact-card {
   padding: 50px 40px;
   background-color: #fff;
   border-radius: 4px;
   z-index: 100;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info {
   display: flex;
   width: 80%;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .info-icon i {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .info-icon i {
   width: 10px;
   color: #2b4eff;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .info-data {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .info-data {
   flex-wrap: wrap;
   margin-left: 18px;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .info-data h3 {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .info-data h3 {
   font-size: 20px;
   font-weight: 600;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .info-data p {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .info-data p {
   font-size: 15px;
   font-weight: 400;
   color: #6d6e75;
   margin-top: -10px;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .follow {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .follow {
   margin-left: 28px;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .follow .icons {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .follow .icons {
   display: flex;
   gap: 10px;
   cursor: pointer;
   margin-top: 20px;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .follow .icons .fb {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .follow .icons .fb {
   color: #285da1;
   background: rgba(40, 93, 161, 0.1);
   padding: 7px 14px;
@@ -626,47 +626,47 @@ main #body-part .container .row .col-4 .contact-card .contact-info .follow .icon
   border-radius: 4px;
   transition: all 0.5s;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .follow .icons .fb:hover {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .follow .icons .fb:hover {
   background-color: #285da1;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .follow .icons .fb:hover .fa-facebook-f {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .follow .icons .fb:hover .fa-facebook-f {
   color: white;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .follow .icons .fb .fa-facebook-f {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .follow .icons .fb .fa-facebook-f {
   color: #285da1;
   transition: all 0.5s;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .follow .icons .tw {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .follow .icons .tw {
   background: rgba(3, 169, 244, 0.1);
   padding: 8px 11px 7px;
   font-size: 18px;
   border-radius: 4px;
   transition: all 0.5s;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .follow .icons .tw:hover {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .follow .icons .tw:hover {
   background-color: #03a9f4;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .follow .icons .tw:hover .fa-twitter {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .follow .icons .tw:hover .fa-twitter {
   color: white;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .follow .icons .tw .fa-twitter {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .follow .icons .tw .fa-twitter {
   color: #03a9f4;
   transition: all 0.5s;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .follow .icons .pnt {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .follow .icons .pnt {
   background: rgba(216, 22, 63, 0.1);
   padding: 8px 14px 6px;
   font-size: 18px;
   border-radius: 4px;
   transition: all 0.5s;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .follow .icons .pnt:hover {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .follow .icons .pnt:hover {
   background-color: #d8163f;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .follow .icons .pnt:hover .fa-pinterest-p {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .follow .icons .pnt:hover .fa-pinterest-p {
   color: white;
 }
-main #body-part .container .row .col-4 .contact-card .contact-info .follow .icons .pnt .fa-pinterest-p {
+main #body-part .container .row .col-lg-4 .contact-card .contact-info .follow .icons .pnt .fa-pinterest-p {
   color: #d8163f;
   transition: all 0.5s;
 }
@@ -691,43 +691,43 @@ main #services .bg-images .pcircle {
 main #services .bg-images .container .row {
   justify-content: center;
 }
-main #services .bg-images .container .row .col-5 .service-card {
+main #services .bg-images .container .row .col-lg-5 .service-card {
   margin-top: 100px;
   padding: 50px 80px 62px;
   border-radius: 6px;
   box-shadow: 0 40px 50px rgba(1, 11, 60, 0.0784313725);
   background-color: white;
 }
-main #services .bg-images .container .row .col-5 .service-card .top-card {
+main #services .bg-images .container .row .col-lg-5 .service-card .top-card {
   text-align: center;
 }
-main #services .bg-images .container .row .col-5 .service-card .top-card i {
+main #services .bg-images .container .row .col-lg-5 .service-card .top-card i {
   padding: 20px 0px;
   font-size: 60px;
   transition: all 0.5s;
   color: #2b4eff;
 }
-main #services .bg-images .container .row .col-5 .service-card .top-card i:hover {
+main #services .bg-images .container .row .col-lg-5 .service-card .top-card i:hover {
   transform: translateY(-10px);
 }
-main #services .bg-images .container .row .col-5 .service-card .middle-card {
+main #services .bg-images .container .row .col-lg-5 .service-card .middle-card {
   text-align: center;
 }
-main #services .bg-images .container .row .col-5 .service-card .middle-card h3 {
+main #services .bg-images .container .row .col-lg-5 .service-card .middle-card h3 {
   font-size: 26px;
   color: #0e1133;
   font-weight: 700;
 }
-main #services .bg-images .container .row .col-5 .service-card .middle-card p {
+main #services .bg-images .container .row .col-lg-5 .service-card .middle-card p {
   margin-top: 30px;
   font-size: 16px;
   color: #53545b;
   font-weight: 400;
 }
-main #services .bg-images .container .row .col-5 .service-card .bottom-card {
+main #services .bg-images .container .row .col-lg-5 .service-card .bottom-card {
   text-align: center;
 }
-main #services .bg-images .container .row .col-5 .service-card .bottom-card button {
+main #services .bg-images .container .row .col-lg-5 .service-card .bottom-card button {
   height: 46px;
   border: 2px solid #d7d9e3;
   color: #0e1133;
@@ -738,7 +738,7 @@ main #services .bg-images .container .row .col-5 .service-card .bottom-card butt
   font-weight: 500;
   transition: all 0.5s;
 }
-main #services .bg-images .container .row .col-5 .service-card .bottom-card button:hover {
+main #services .bg-images .container .row .col-lg-5 .service-card .bottom-card button:hover {
   background: #2b4eff;
   border-color: #2b4eff;
   color: #fff;
@@ -757,7 +757,7 @@ footer #footer-main .container-custom {
   margin: 0 auto;
 }
 footer #footer-main .container-custom .row {
-  padding-top: 100px;
+  padding-top: 200px;
 }
 footer #footer-main .container-custom .row .first-footer img {
   margin-bottom: 30px;
@@ -941,6 +941,27 @@ footer #footer-bottom p a {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 767px) {
+  main #intro .col-12 h1 {
+    font-size: 40px !important;
+  }
+  main #body-part .col-lg-8 .heading img {
+    width: 36% !important;
+  }
+  main #body-part .col-lg-4 .background-images img {
+    display: none;
+  }
+  main #services .bg-images img {
+    z-index: -10 !important;
+  }
+  footer #footer-main .container-custom {
+    margin: 0px 30px !important;
+  }
+  footer #footer-main .container-custom .col-12 {
+    margin-left: 5px !important;
+    margin-top: 20px !important;
+  }
+}
 @keyframes animation-yellow {
   0% {
     width: 0;

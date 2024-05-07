@@ -12,6 +12,7 @@ header {
         position: fixed;
         top: 0;
         left: 6%;
+
         .container {
             .dropdown-items {
                 margin-left: 200px;
@@ -96,6 +97,8 @@ header {
             }
 
             .contact-li {
+                margin-right: 16px;
+
                 a {
                     color: white !important;
                 }
@@ -510,7 +513,6 @@ header {
         z-index: 100;
     }
 }
-
 main {
     #intro {
         .background {
@@ -1169,6 +1171,7 @@ main {
 footer {
     background-color: #141130;
     position: relative;
+
     #adv-box {
         .adv-div {
             background-color: #2b4eff;
@@ -1184,7 +1187,7 @@ footer {
             overflow: hidden;
             display: flex;
             justify-content: space-between;
-    
+
             .adv-right {
                 h1 {
                     font-size: 46px;
@@ -1193,7 +1196,7 @@ footer {
                     font-weight: 600;
                 }
             }
-    
+
             .adv-left {
                 img {
                     position: absolute;
@@ -1201,7 +1204,7 @@ footer {
                     top: -125%;
                     z-index: 0;
                 }
-    
+
                 button {
                     position: absolute;
                     z-index: 1;
@@ -1221,6 +1224,7 @@ footer {
             }
         }
     }
+
     #footer-main {
         padding-bottom: 50px;
 
@@ -1450,6 +1454,72 @@ footer {
             a {
                 color: #fff;
                 text-decoration: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    main{
+        #find-courses{
+            .page-navigation{
+                display:  block !important;
+                .pn-right{
+                    margin-top: 10px !important;
+                }
+            }
+            .long{
+                .col-12{
+                    .long-card{
+                        display: block !important;
+                        .description-part{
+                            .long-card-bottom{
+                                justify-content: center !important;
+                                .details{
+                                    margin-left: 48px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }    
+    }
+    footer {
+        #adv-box {
+            .adv-div {
+                flex-direction: column;
+                width: 90% !important;
+                left: 5% !important;
+                bottom: 92% !important;
+                padding: 20px 30px 80px !important;
+                
+                .adv-right {
+                    h1 {
+                        font-size: 26px !important;
+                    }
+                }
+
+                .adv-left {
+                    img {
+                        display: none;
+                    }
+
+                    button {
+                        left: 7% !important;
+                        top: 70% !important;
+                    }
+                }
+            }
+        }
+
+        #footer-main {
+            .container-custom {
+                margin: 0px 30px !important;
+
+                .col-12 {
+                    margin-left: 5px !important;
+                    margin-top: 20px !important;
+                }
             }
         }
     }

@@ -647,6 +647,10 @@ main {
                                 border: 2px solid #f3f4f8;
                                 color: #0e1133;
                                 font-size: 15px;
+
+                                &:focus {
+                                    outline: 1.6px solid #2b4eff;
+                                }
                             }
                         }
                     }
@@ -835,7 +839,6 @@ main {
                                     }
                                 }
                             }
-
                         }
                     }
                 }

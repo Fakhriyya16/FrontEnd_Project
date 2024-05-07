@@ -520,6 +520,9 @@ main #body-part .container .row .col-lg-8 .your-message .col-12 input {
   color: #0e1133;
   font-size: 15px;
 }
+main #body-part .container .row .col-lg-8 .your-message .col-12 input:focus {
+  outline: 1.6px solid #2b4eff;
+}
 main #body-part .container .row .col-lg-8 .terms input {
   margin-top: 20px;
   cursor: pointer;
